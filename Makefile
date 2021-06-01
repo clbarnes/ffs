@@ -45,7 +45,9 @@ update-spec:
 	&& git pull \
 	&& cd .. \
 	&& rm -f ffs/{FILE_STRUCTURE,GUIDELINES}.md \
-	&& cp data-policy/{FILE_STRUCTURE,GUIDELINES}.md ffs/
+	&& cp data-policy/{FILE_STRUCTURE,GUIDELINES}.md ffs/ \
+	&& echo "SPEC_VERSION = \"$(cd data-policy && git describe)\"" \
+		> ffs/spec_version.py
 
 .PHONY: clean-book
 clean-book:
