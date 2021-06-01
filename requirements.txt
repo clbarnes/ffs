@@ -2,6 +2,7 @@ strictyaml
 toml
 click
 networkx
+typing-extensions; python_version < '3.7'
 
 # dev
 

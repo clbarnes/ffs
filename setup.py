@@ -13,7 +13,14 @@ setup(
     long_description=readme,
     long_description_content_type="text/markdown",
     packages=find_packages(include=["ffs*"]),
-    install_requires=["strictyaml", "toml", "setuptools", "click", "networkx"],
+    install_requires=[
+        "strictyaml",
+        "toml",
+        "setuptools",
+        "click",
+        "networkx",
+        "typing-extensions; python_version < '3.7'",
+    ],
     python_requires=">=3.7, <4.0",
     classifiers=[
         "Development Status :: 3 - Alpha",
