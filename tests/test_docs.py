@@ -13,7 +13,8 @@ has_submodule = SRC_DIR.exists() and any(SRC_DIR.iterdir())
 
 
 requires_submodule = pytest.mark.skipif(
-    not has_submodule, reason="data-policy submodule not available",
+    not has_submodule,
+    reason="data-policy submodule not available",
 )
 
 
