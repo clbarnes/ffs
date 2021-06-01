@@ -1,0 +1,383 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Guidelines</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="structure.html">Structure</a></li><li class="chapter-item expanded affix "><a href="guidelines.html" class="active">Guidelines</a></li><li class="chapter-item expanded affix "><a href="notes.html">Notes</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> chunkychinchilla:/home/barnesc/work/code/ffs/data-policy/example</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="analysis/index.html"><strong aria-hidden="true">1.1.</strong> analysis</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="analysis/2012_radicchios-postpaid/index.html"><strong aria-hidden="true">1.1.1.</strong> 2012_radicchios-postpaid</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="analysis/2012_radicchios-postpaid/2003-06-11_mustily-handworks/index.html"><strong aria-hidden="true">1.1.1.1.</strong> 2003-06-11_mustily-handworks</a></li><li class="chapter-item expanded "><a href="analysis/2012_radicchios-postpaid/2015-11_blackburn-trebling/index.html"><strong aria-hidden="true">1.1.1.2.</strong> 2015-11_blackburn-trebling</a></li></ol></li><li class="chapter-item expanded "><a href="analysis/2020_bulgiest-grunion/index.html"><strong aria-hidden="true">1.1.2.</strong> 2020_bulgiest-grunion</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="analysis/2020_bulgiest-grunion/2007_forgeries-sensitivenesss/index.html"><strong aria-hidden="true">1.1.2.1.</strong> 2007_forgeries-sensitivenesss</a></li><li class="chapter-item expanded "><a href="analysis/2020_bulgiest-grunion/2010_panting-capitulating/index.html"><strong aria-hidden="true">1.1.2.2.</strong> 2010_panting-capitulating</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="experiment/index.html"><strong aria-hidden="true">1.2.</strong> experiment</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="experiment/2004_colon-sketchy/index.html"><strong aria-hidden="true">1.2.1.</strong> 2004_colon-sketchy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="experiment/2004_colon-sketchy/2002_snifter-lowliness/index.html"><strong aria-hidden="true">1.2.1.1.</strong> 2002_snifter-lowliness</a></li></ol></li><li class="chapter-item expanded "><a href="experiment/2011_undecidable-torontos/index.html"><strong aria-hidden="true">1.2.2.</strong> 2011_undecidable-torontos</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="experiment/2011_undecidable-torontos/2007-06_clammier-goths/index.html"><strong aria-hidden="true">1.2.2.1.</strong> 2007-06_clammier-goths</a></li><li class="chapter-item expanded "><a href="experiment/2011_undecidable-torontos/2016-04-09_claiming-jelly/index.html"><strong aria-hidden="true">1.2.2.2.</strong> 2016-04-09_claiming-jelly</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="simulation/index.html"><strong aria-hidden="true">1.3.</strong> simulation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="simulation/2012_reinvestment-focsles/index.html"><strong aria-hidden="true">1.3.1.</strong> 2012_reinvestment-focsles</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="simulation/2012_reinvestment-focsles/2017-04-06_posh-particles/index.html"><strong aria-hidden="true">1.3.1.1.</strong> 2017-04-06_posh-particles</a></li></ol></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#cardona-lab-data-guidelines" id="cardona-lab-data-guidelines">Cardona lab data guidelines</a></h1>
+<p>These guidelines are intended to minimise ambiguity between researchers, and maximise compatibility with software tools and conventions.
+While these guidelines may represent a &quot;best practice&quot; and a good starting point for new projects, they are less important than consistency within existing projects and compatibility with existing tools.</p>
+<h2><a class="header" href="#tooling" id="tooling">Tooling</a></h2>
+<p>Where possible, use free, open source tools (e.g. python or R rather than MATLAB; LibreOffice rather than Microsoft Office).
+This maximises accessibility and portability.</p>
+<p>Always specify required software packages and their versions in an appropriate way which makes it as easy as possible to reproduce the environment.
+For example, python's <code>requirements.txt</code>, <code>Imports</code> in R's <code>DESCRIPTION</code> file, or listing required toolboxes and 3rd party packages (with URLs, ideally to specific versions) for MATLAB.</p>
+<p>Ideally, being able to run an analysis pipeline in a container (<a href="https://docs.docker.com">docker</a> or <a href="https://sylabs.io/guides/latest/user-guide/introduction.html">singularity</a>) guarantees portability.</p>
+<h2><a class="header" href="#determinism" id="determinism">Determinism</a></h2>
+<p>Everything except raw experimental data and subjective annotations should be repeatable.
+Many types of analysis are not, by default: they could use random numbers, or be order-dependent.</p>
+<p>In most cases, sorting the data deterministically, and <a href="https://en.wikipedia.org/wiki/Random_seed">seeding pseudo-random number generators</a>, will make your analysis deterministic, and therefore repeatable.</p>
+<p>e.g.</p>
+<pre><code class="language-python">#!/usr/bin/env python
+import random
+
+def not_repeatable():
+    return [random.random(), random.random(), random.random()]
+
+def repeatable():
+    rng = random.Random(1991)  # some arbitrary seed number
+    return [rng.random(), rng.random(), rng.random()]
+</code></pre>
+<p>If working with results which get jumbled up during analysis, sort them before output:</p>
+<pre><code class="language-python">#!/usr/bin/env python
+my_numbers = {5, 7, 1, 2, 45, 3}
+
+for n in sorted(my_numbers):
+    print(n)
+</code></pre>
+<h2><a class="header" href="#configuration" id="configuration">Configuration</a></h2>
+<p>Various formats exist for sharing configuration between humans and machines.
+If you have structured metadata in your project (e.g. experimental parameters), try to use one of these rather than hard-coding values into your scripts and pipelines.
+Always use an appropriate file extension.</p>
+<table><thead><tr><th>Name</th><th>Pros</th><th>Cons</th></tr></thead><tbody>
+<tr><td><a href="https://github.com/toml-lang/toml">TOML</a></td><td>Easy for humans and machines to read/write</td><td>Not good for deeply nested structures</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/YAML">YAML</a></td><td>Reasonably easy for humans to read, good for nesting and internal references</td><td>Specification is complicated - so are the programs which read it <br> (<a href="https://hitchdev.com/strictyaml/">StrictYAML</a> is a simple, safe subset, but not widely used)</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/JSON">JSON</a></td><td>Somewhat easy for humans to read when formatted, very easy for machines to read/write, very widely supported</td><td>Harder for humans to write, or read when compact, no comments</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/XML">XML</a></td><td>Good for enforcing schemas, easy for machines to read/write, built-in metadata</td><td>Hard for humans to read/write, overly verbose</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/INI_file">INI</a></td><td>Commonly used, absolute basics are intuitive, some kind of support is often built-in</td><td>No specification, so different software interprets it differently - AVOID</td></tr>
+</tbody></table>
+<p>Broadly speaking:</p>
+<ul>
+<li>If the file will primarily be read/written by machines (with human editing as a fallback), use JSON.</li>
+<li>If the file requires deep nesting, use YAML.</li>
+<li>Otherwise, use TOML.</li>
+</ul>
+<p>These formats can easily be inter-converted.</p>
+<p>Other formats do exist (like HJSON, which tries to make JSON more human-readable) but are not widely used.</p>
+<h2><a class="header" href="#dates--times" id="dates--times">Dates / times</a></h2>
+<p>As far as possible, dates should conform to <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO-8601</a>.
+This makes them sortable, readable, unambiguous, and widely supported.</p>
+<p>Use 4 digits for years, and 2 digits for months, days, hours, minutes, and seconds.
+Always use a 24-hour clock.
+Sub-second times can be represented as a decimal of appropriate precision.
+Time zone, where appropriate, should be specified as <code>Z</code> for <a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a>, or as a <code>+</code>/<code>-</code> <code>HHMM</code> offset from UTC.</p>
+<p>Separate date values with <code>-</code>.
+Separate date from time with <code>T</code>.
+Separate time values (other than UTC offsets) with <code>:</code>.</p>
+<p>e.g.</p>
+<pre><code>1999-11-30
+2020-12-31T23:59:59.9999+0000
+</code></pre>
+<p>In C-like time representation (also used in python and the POSIX <code>date</code> utility), that is <code>%Y-%m-%dT%H:%M:%S%z</code> (in C and python, use <code>%f</code> for microseconds: <code>date</code> uses <code>%N</code> for nanoseconds).</p>
+<p>Note the exceptions below for datetimes in filenames.</p>
+<h2><a class="header" href="#file-names" id="file-names">File names</a></h2>
+<p>As much as possible, do not to use whitespace in file names.
+If whitespace is absolutely necessary, use only a single space character (i.e. no tab, newline, carriage return, or multiple spaces).</p>
+<p>Prefer lower case as much as possible.
+Only use upper case where it confers some meaning, e.g. in an acronym or initialisation.
+As far as possible, no two files in the same directory should be disambiguated solely by capitalisation (e.g. &quot;my_file.txt&quot; and &quot;My_File.TXT&quot;).</p>
+<h3><a class="header" href="#characters" id="characters">Characters</a></h3>
+<p>Where possible, use only <a href="https://en.wikipedia.org/wiki/ASCII#Printable_characters">printable 7-bit ASCII characters</a>.
+This maximises compatability with software tools and researchers' keyboards.</p>
+<p>Some platforms <a href="https://en.wikipedia.org/wiki/Filename#Reserved_characters_and_words">restrict the characters you can use in file names</a>, or assign special to characters such that they require quoting or escaping.
+Try to avoid these characters (including, but not limited to, <code>/\?%*^:;|`'&quot;&lt;&gt;,=()[]{}&amp;#$</code>) where possible, even if your platform allows them.</p>
+<p>Where ASCII characters are not sufficient, make efforts to use <a href="https://en.wikipedia.org/wiki/UTF-8">UTF-8 encoding</a>, as it is a strict superset of ASCII, very widely supported, and can encode all <a href="https://en.wikipedia.org/wiki/Unicode">Unicode</a> characters.</p>
+<h3><a class="header" href="#case-conventions" id="case-conventions">Case conventions</a></h3>
+<p>Be aware of these common conventions for delimiting words without spaces, and try to stay consistent within a project:</p>
+<ul>
+<li><code>snake_case</code></li>
+<li><code>SCREAMING_SNAKE_CASE</code></li>
+<li><code>kebab-case</code></li>
+<li><code>camelCase</code></li>
+<li><code>UpperCamel</code></li>
+</ul>
+<h3><a class="header" href="#file-extensions" id="file-extensions">File extensions</a></h3>
+<p>Most humans, and many software tools including some operating systems, infer a file's format from its extension: a few characters after the final period in a file name.
+Where extensions exist for your file format, use them as specifically as possible.
+For example, use <code>.csv</code> rather than <code>.txt</code> for comma separated value files even though they are indeed text; <code>.tsv</code> if the separators are tabs.</p>
+<p>If there is no appropriate file extension for your specific data format, consider using <code>.bin</code> for binary data, and <code>.dat</code> for text data (can also be used for binary).
+Document the format of this data, either alongside the data files, or with a permalink (do not rely on institutional knowledge).</p>
+<h3><a class="header" href="#datetimes-in-file-names" id="datetimes-in-file-names">Datetimes in file names</a></h3>
+<p>Windows does not support <code>:</code> in file names, and many systems assign importance to period characters, so ISO-8601 datetimes are often not be appropriate.
+Stripping just the problematic delimiters (<code>:.</code>) is therefore necessary for file names; stripping all delimiters (<code>-T:.+-</code>) may also be convenient if human readability is a secondary concern.
+Also consider the precision appropriate for your file name (you probably don't need to name files for the millisecond they correspond to).</p>
+<h3><a class="header" href="#file-name-schemas" id="file-name-schemas">File name schemas</a></h3>
+<p>When designing a file name schema for a project, it is important to find the balance between how easy it is the parse for humans and machines.
+If you can guarantee a fixed width (e.g. for bounded numbers like times), use zero padding.
+If the file name can semantically be split into different components, try to delimit those components with a particular character which should not occur in any of the individual components.
+For example, a directory name which encodes the date, experimenter, and protocol name could look like</p>
+<p><code>2020-08-14_cbarnes_the-best-protocol</code></p>
+<p>This can be parsed in python using <code>date_str, name, protocol = my_filename.split(&quot;_&quot;)</code>, or in <code>awk</code> (printing each component on a new line) with <code>echo $my_directory | awk -F _ '{ printf &quot;date: %s\nname: %s\nprotocol: %s&quot;, $1, $2, $3 }'</code></p>
+<p>Subdirectories are (more or less) free!
+If lots of files in a directory share a component in their name, consider using a subdirectory for that component.
+It can also be convenient to minimise the types of files present in a directory by keeping e.g. input data separate to output data separate to metadata and configuration.</p>
+<h2><a class="header" href="#versioning" id="versioning">Versioning</a></h2>
+<h3><a class="header" href="#version-control-systems" id="version-control-systems">Version control systems</a></h3>
+<p>Relatively small, plain-text files (e.g. code, configuration, summary data, manuscripts) should be version-controlled for ease of tracking, attribution, sharing and collaboration.
+Prefer <a href="https://git-scm.com/">git</a> as a widely compatible, free/ open source, very thoroughly documented solution with a vibrant ecosystem.</p>
+<p>Files are added to an index, and changes are stored in explicitly-controlled, annotated blocks called commits.
+Commits can branch off from each other and later be merged back together, for experimental or parallel collaborative work.</p>
+<p>Keeping experimental parameters, summary data, figures, and manuscripts synchronised (they can be in different repositories - use <a href="https://www.vogella.com/tutorials/GitSubmodules/article.html">git submodules</a> to make a meta-repo to synchronise versions) is extremely valuable, as is being able to trivially jump through the project's history.
+Furthermore, git with a remote service like GitHub or GitLab makes it very easy to backup, share, and collaborate on projects.</p>
+<p>There are plenty of tutorials available for various purposes, including <a href="https://clbarnes.github.io/version-control-tutorial/">this lab-internal one</a>.
+There are additionally standards/ workflows built on top of git, such as <a href="https://www.conventionalcommits.org">Conventional Commits</a> and <a href="https://datasift.github.io/gitflow/IntroducingGitFlow.html">GitFlow</a>, which you may find helpful.</p>
+<h3><a class="header" href="#versioning-schemes" id="versioning-schemes">Versioning schemes</a></h3>
+<h4><a class="header" href="#semantic-versioning-a-hrefhttpssemverorgsemvera" id="semantic-versioning-a-hrefhttpssemverorgsemvera">Semantic versioning (<a href="https://semver.org/">SemVer</a>)</a></h4>
+<p>Use this if you can distinguish between &quot;major&quot; and &quot;minor&quot; versions (possibly smaller distinctions too).</p>
+<p>In software, a major version comes with breaking changes: something which works on v1 may not work on v2 and vice versa.
+A minor version may add functionality, but it does not change existing functionality other than to fix a bug: something which works correctly on v1.1 should work on v1.2, but the reverse is not true.
+A patch version fixes a bug, but does not change correct functionality.</p>
+<p>For a paper, a major version could be a submitted revision, a minor version adds content, and a patch version e.g. fixes typos.</p>
+<p>Semantic versions are not necessarily lexicographically sortable as numbers enter double digits in an unpredictable manner, but most programming languages and shell tools can sort them fairly easily (e.g. python <code>sorted(version_list, key=lambda s: tuple(int(c) for c in s.split(&quot;.&quot;)))</code>, bash <code>cat versions.txt | sort -t &quot;.&quot; -k1,1n -k2,2n -k3,3n</code>).</p>
+<h4><a class="header" href="#calendar-versioning-a-hrefhttpscalverorgcalvera" id="calendar-versioning-a-hrefhttpscalverorgcalvera">Calendar versioning (<a href="https://calver.org/">CalVer</a>)</a></h4>
+<p>If you are not making guarantees about the interface between versions, consider serialising the release date in some way (preferably sortable; see section on dates) and using that as a version.</p>
+<p>Note that your choice of resolution (e.g. <code>YYYY.mm</code>) may limit your release schedule.
+Some projects use a mixed schema where the components are year, then month, then the release number within that month.</p>
+<h4><a class="header" href="#commit-hashes" id="commit-hashes">Commit hashes</a></h4>
+<p>For maximum reproducibility, if part of a project is under version control, you can refer to the specific commit you used (e.g. noting which configuration you used for an experiment).
+This is not particularly human-readable or ordinal, but it's specific and makes it very easy to retrieve those parameters.
+Use <code>git rev-parse HEAD</code> to get the current git commit hash.
+You may not need to use all of it (usually the first 7 or so characters are sufficient).</p>
+<h2><a class="header" href="#documentation" id="documentation">Documentation</a></h2>
+<p>Include a plain-text README file wherever some explanation would be helpful.
+Consider a light markup language like <a href="https://commonmark.org/help/">markdown</a> for some basic formatting.</p>
+<p>For more involved documentation, multiple tool ecosystems exist, including</p>
+<ul>
+<li><a href="https://rust-lang.github.io/mdBook/">mdBook</a>, tying together multiple markdown pages into an HTML page</li>
+<li><a href="https://asciidoctor.org/">asciidoctor</a></li>
+<li><a href="https://www.sphinx-doc.org/en/master/">sphinx</a></li>
+</ul>
+<h2><a class="header" href="#references" id="references">References</a></h2>
+<ul>
+<li><a href="https://www.nature.com/articles/sdata201618">The FAIR Guiding Principles for scientific data management and stewardship</a></li>
+<li><a href="https://www.mdpi.com/2306-5729/5/2/43/htm">Guidelines for a Standardized Filesystem Layout for Scientific Data</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5714127/">Parallel sequencing lives, or what makes large sequencing projects successful</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="structure.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="notes.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="structure.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="notes.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

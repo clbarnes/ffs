@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Structure</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="structure.html" class="active">Structure</a></li><li class="chapter-item expanded affix "><a href="guidelines.html">Guidelines</a></li><li class="chapter-item expanded affix "><a href="notes.html">Notes</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> chunkychinchilla:/home/barnesc/work/code/ffs/data-policy/example</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="analysis/index.html"><strong aria-hidden="true">1.1.</strong> analysis</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="analysis/2012_radicchios-postpaid/index.html"><strong aria-hidden="true">1.1.1.</strong> 2012_radicchios-postpaid</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="analysis/2012_radicchios-postpaid/2003-06-11_mustily-handworks/index.html"><strong aria-hidden="true">1.1.1.1.</strong> 2003-06-11_mustily-handworks</a></li><li class="chapter-item expanded "><a href="analysis/2012_radicchios-postpaid/2015-11_blackburn-trebling/index.html"><strong aria-hidden="true">1.1.1.2.</strong> 2015-11_blackburn-trebling</a></li></ol></li><li class="chapter-item expanded "><a href="analysis/2020_bulgiest-grunion/index.html"><strong aria-hidden="true">1.1.2.</strong> 2020_bulgiest-grunion</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="analysis/2020_bulgiest-grunion/2007_forgeries-sensitivenesss/index.html"><strong aria-hidden="true">1.1.2.1.</strong> 2007_forgeries-sensitivenesss</a></li><li class="chapter-item expanded "><a href="analysis/2020_bulgiest-grunion/2010_panting-capitulating/index.html"><strong aria-hidden="true">1.1.2.2.</strong> 2010_panting-capitulating</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="experiment/index.html"><strong aria-hidden="true">1.2.</strong> experiment</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="experiment/2004_colon-sketchy/index.html"><strong aria-hidden="true">1.2.1.</strong> 2004_colon-sketchy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="experiment/2004_colon-sketchy/2002_snifter-lowliness/index.html"><strong aria-hidden="true">1.2.1.1.</strong> 2002_snifter-lowliness</a></li></ol></li><li class="chapter-item expanded "><a href="experiment/2011_undecidable-torontos/index.html"><strong aria-hidden="true">1.2.2.</strong> 2011_undecidable-torontos</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="experiment/2011_undecidable-torontos/2007-06_clammier-goths/index.html"><strong aria-hidden="true">1.2.2.1.</strong> 2007-06_clammier-goths</a></li><li class="chapter-item expanded "><a href="experiment/2011_undecidable-torontos/2016-04-09_claiming-jelly/index.html"><strong aria-hidden="true">1.2.2.2.</strong> 2016-04-09_claiming-jelly</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="simulation/index.html"><strong aria-hidden="true">1.3.</strong> simulation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="simulation/2012_reinvestment-focsles/index.html"><strong aria-hidden="true">1.3.1.</strong> 2012_reinvestment-focsles</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="simulation/2012_reinvestment-focsles/2017-04-06_posh-particles/index.html"><strong aria-hidden="true">1.3.1.1.</strong> 2017-04-06_posh-particles</a></li></ol></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#file-system-structure" id="file-system-structure">File system structure</a></h1>
+<p>The proposed structure for data on the file system is inspired by <a href="https://www.mdpi.com/2306-5729/5/2/43/htm">Spreckelsen et. al 2020</a>, but more flexible.
+The intention is to provide a structure which is more easily navigable by both humans and computers, with structured metadata and clear documentation about each dataset, while still allowing the flexibility to encompass existing analysis pipelines.</p>
+<p>The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;, &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;,  &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this document are to be interpreted as described in <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
+<h2><a class="header" href="#entries" id="entries">Entries</a></h2>
+<p>An entry is a directory on the file system which contains metadata files described below.
+Entries MAY contain other entries (child entries).
+Entries MAY contain non-entry directories, which MUST be specified using the <code>ignore</code> metadata field:
+users SHOULD minimise the number of entries which contain both entry and non-entry subdirectories.</p>
+<p>Entries are discovered by searching recursively down from a root entry.
+Directories which are not valid entries will not be recursed through.</p>
+<h2><a class="header" href="#metadata" id="metadata">Metadata</a></h2>
+<p>Every entry MUST contain two entry metadata files in it.</p>
+<h3><a class="header" href="#readmemd" id="readmemd">README.md</a></h3>
+<p>The <code>README.md</code> MUST be a plain text (<a href="https://en.wikipedia.org/wiki/UTF-8">UTF-8</a>) file with a medium to long description of the entry, in <a href="https://commonmark.org/help/">markdown</a> format (allowing light formatting which can easily be understood in plain text or rendered into something prettier).
+Specifically, this is should follow Commonmark (as per the link above) with the <a href="https://github.github.com/gfm/#tables-extension-">Github Flavoured Markdown tables extension</a>): however, it is RECOMMENDED that complex tables go in a different file.</p>
+<p>It SHOULD contain relevant references, motivations, and project goals.
+Primarily, it SHOULD allow a qualified but unfamiliar observer to understand what the entry <em>is</em> at a glance.</p>
+<p>Such a file MAY look like</p>
+<pre><code class="language-markdown"># My project
+
+This project investigates how common a particular phenomenon is in the world.
+There are many such phenomena but some evidence (see `./preliminary-results/` directory) suggests that this is the important one.
+
+You might *think* that it's not that important, but it **really** is.
+
+See [wikipedia][1] for related literature.
+
+[1]: https://en.wikipedia.org/
+</code></pre>
+<h3><a class="header" href="#metadatayaml" id="metadatayaml">METADATA.yaml</a></h3>
+<p>The <code>METADATA.yaml</code> MUST be plain text (<a href="https://en.wikipedia.org/wiki/UTF-8">UTF-8</a>) structured data file in <a href="https://en.wikipedia.org/wiki/YAML">YAML</a> format (specifically the much simpler subset <a href="https://hitchdev.com/strictyaml/">StrictYAML</a>), which is easy for both humans and machines to read and write.
+It supports nestable maps (looking up a key to get a value associated with it), sequences of similar/related items, and scalars (numbers/ strings of letters).</p>
+<p>At a minimum, an entry MUST have two keys: <code>responsible</code> (which MUST be a sequence of one or more people associated with the entry, who MUST be given in an unambiguous format e.g. including an email address) and <code>description</code> (which MUST be a one-sentence gist of the project, expanded upon in the <code>README.md</code>).
+Such a minimal file MAY look like:</p>
+<pre><code class="language-yaml">responsible:
+- John Smith &lt;jsmith@mrc-lmb.cam.ac.uk&gt;
+- Jane Doe &lt;jd619@cam.ac.uk&gt;
+description: Determine optimal parameters for keeping neuroscience fun
+</code></pre>
+<p>Other common fields MAY include:</p>
+<ul>
+<li><code>ignore</code>: a list of non-entry subdirectories, as glob patterns (see below)</li>
+<li><code>sources</code>: a list of entries which this entry depends on, as paths (e.g. raw data which an analysis is based on)</li>
+<li><code>revisionOf</code>: if an entry is a fixed/updated version of a previously-created entry</li>
+<li><code>results</code>: a list of the key outputs of this entry, as maps with keys <code>file</code> (path or <a href="https://en.wikipedia.org/wiki/Glob_(programming)">glob pattern</a>) and <code>description</code> (what these results represent)</li>
+<li><code>scripts</code>: the entry point of a particular simulation run/ analysis pipeline, as a map with the keys <code>file</code> (a path) and <code>description</code> (what that script does, briefly)</li>
+</ul>
+<p>A metadata file including all of these MAY look like</p>
+<pre><code class="language-yaml">responsible:
+- John Smith &lt;jsmith@mrc-lmb.cam.ac.uk&gt;
+- Jane Doe &lt;jd619@cam.ac.uk&gt;
+description: Determine optimal parameters for keeping neuroscience fun
+ignore: *
+sources:
+- ../../2020_brain-stimulation-raw
+revisionOf: ../2020_brain-stimulation-analysis
+results:
+- file: results/traces/subject-*.csv
+  description: EMG traces from all participants
+- file: results/faces/*/*.tif
+  description: videos of participants' faces
+scripts:
+- file: scripts/warmup.py
+  description: protocol to get subjects used to the experimental setup
+- file: scripts/experiment.sh
+  description: run the full experiment for a single subject
+</code></pre>
+<p>Further fields and examples are described in <a href="https://www.mdpi.com/2306-5729/5/2/43/htm">Spreckelsen</a>.</p>
+<p>Additional fields which may be valuable for us include:</p>
+<ul>
+<li>IDs of experimental rigs, protocol versions, microscopes</li>
+<li>links to git repositories/ specific revisions for source code used to generate data</li>
+<li>references for a paper where a particular dataset or pipeline is authoritatively described (&quot;inspiration&quot; papers should be kept in the README)</li>
+</ul>
+<p>Broadly speaking, if you can think of a reason that different entries may have the same information represented, and it may be necessary for a computer to query that information, it SHOULD go into the <code>METADATA.yaml</code>.</p>
+<h4><a class="header" href="#ignore" id="ignore"><code>ignore</code></a></h4>
+<p>Entries which contain non-entry directories MUST specify those directories using the <code>ignore</code> field, which MUST be either a string or a sequence of strings.
+Many directories can be specified at once using case-sensitive <a href="https://en.wikipedia.org/wiki/Glob_(programming)#Syntax">glob syntax</a>.</p>
+<p>For example,</p>
+<pre><code class="language-yaml">ignore: *
+</code></pre>
+<p>specifies that all subdirectories are non-entries (i.e. this is a leaf entry).</p>
+<p>A more complex selection MAY look like</p>
+<pre><code class="language-yaml">ignore:
+- *_tmp
+- ????-??_experiment
+- [abc][!def]*
+</code></pre>
+<h2><a class="header" href="#differences-from-spreckelsen-et-al" id="differences-from-spreckelsen-et-al">Differences from Spreckelsen et. al</a></h2>
+<ul>
+<li>Type and purpose of entry are completely freeform, without the category/project/experiment structure</li>
+<li><code>kebab-case</code> entry names SHOULD be preferred over <code>UpperCamel</code></li>
+<li>Split project/ experiment long description and structured metadata into separate files (<code>README.md</code> and <code>METADATA.yaml</code>)</li>
+</ul>
+<h2><a class="header" href="#open-questions" id="open-questions">Open questions</a></h2>
+<ul>
+<li>How do we handle cross-filesystem references (e.g. references between <code>zstore1</code> and <code>ark</code>)?</li>
+<li>Are there any other metadata fields to standardise?
+<ul>
+<li>e.g. rig designation</li>
+</ul>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+                            <a rel="next" href="guidelines.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+                    <a rel="next" href="guidelines.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

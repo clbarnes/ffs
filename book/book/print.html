@@ -1,0 +1,770 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title></title>
+        
+        <meta name="robots" content="noindex" />
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="structure.html">Structure</a></li><li class="chapter-item expanded affix "><a href="guidelines.html">Guidelines</a></li><li class="chapter-item expanded affix "><a href="notes.html">Notes</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> chunkychinchilla:/home/barnesc/work/code/ffs/data-policy/example</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="analysis/index.html"><strong aria-hidden="true">1.1.</strong> analysis</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="analysis/2012_radicchios-postpaid/index.html"><strong aria-hidden="true">1.1.1.</strong> 2012_radicchios-postpaid</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="analysis/2012_radicchios-postpaid/2003-06-11_mustily-handworks/index.html"><strong aria-hidden="true">1.1.1.1.</strong> 2003-06-11_mustily-handworks</a></li><li class="chapter-item expanded "><a href="analysis/2012_radicchios-postpaid/2015-11_blackburn-trebling/index.html"><strong aria-hidden="true">1.1.1.2.</strong> 2015-11_blackburn-trebling</a></li></ol></li><li class="chapter-item expanded "><a href="analysis/2020_bulgiest-grunion/index.html"><strong aria-hidden="true">1.1.2.</strong> 2020_bulgiest-grunion</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="analysis/2020_bulgiest-grunion/2007_forgeries-sensitivenesss/index.html"><strong aria-hidden="true">1.1.2.1.</strong> 2007_forgeries-sensitivenesss</a></li><li class="chapter-item expanded "><a href="analysis/2020_bulgiest-grunion/2010_panting-capitulating/index.html"><strong aria-hidden="true">1.1.2.2.</strong> 2010_panting-capitulating</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="experiment/index.html"><strong aria-hidden="true">1.2.</strong> experiment</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="experiment/2004_colon-sketchy/index.html"><strong aria-hidden="true">1.2.1.</strong> 2004_colon-sketchy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="experiment/2004_colon-sketchy/2002_snifter-lowliness/index.html"><strong aria-hidden="true">1.2.1.1.</strong> 2002_snifter-lowliness</a></li></ol></li><li class="chapter-item expanded "><a href="experiment/2011_undecidable-torontos/index.html"><strong aria-hidden="true">1.2.2.</strong> 2011_undecidable-torontos</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="experiment/2011_undecidable-torontos/2007-06_clammier-goths/index.html"><strong aria-hidden="true">1.2.2.1.</strong> 2007-06_clammier-goths</a></li><li class="chapter-item expanded "><a href="experiment/2011_undecidable-torontos/2016-04-09_claiming-jelly/index.html"><strong aria-hidden="true">1.2.2.2.</strong> 2016-04-09_claiming-jelly</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="simulation/index.html"><strong aria-hidden="true">1.3.</strong> simulation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="simulation/2012_reinvestment-focsles/index.html"><strong aria-hidden="true">1.3.1.</strong> 2012_reinvestment-focsles</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="simulation/2012_reinvestment-focsles/2017-04-06_posh-particles/index.html"><strong aria-hidden="true">1.3.1.1.</strong> 2017-04-06_posh-particles</a></li></ol></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#file-system-structure" id="file-system-structure">File system structure</a></h1>
+<p>The proposed structure for data on the file system is inspired by <a href="https://www.mdpi.com/2306-5729/5/2/43/htm">Spreckelsen et. al 2020</a>, but more flexible.
+The intention is to provide a structure which is more easily navigable by both humans and computers, with structured metadata and clear documentation about each dataset, while still allowing the flexibility to encompass existing analysis pipelines.</p>
+<p>The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;, &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;,  &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this document are to be interpreted as described in <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
+<h2><a class="header" href="#entries" id="entries">Entries</a></h2>
+<p>An entry is a directory on the file system which contains metadata files described below.
+Entries MAY contain other entries (child entries).
+Entries MAY contain non-entry directories, which MUST be specified using the <code>ignore</code> metadata field:
+users SHOULD minimise the number of entries which contain both entry and non-entry subdirectories.</p>
+<p>Entries are discovered by searching recursively down from a root entry.
+Directories which are not valid entries will not be recursed through.</p>
+<h2><a class="header" href="#metadata" id="metadata">Metadata</a></h2>
+<p>Every entry MUST contain two entry metadata files in it.</p>
+<h3><a class="header" href="#readmemd" id="readmemd">README.md</a></h3>
+<p>The <code>README.md</code> MUST be a plain text (<a href="https://en.wikipedia.org/wiki/UTF-8">UTF-8</a>) file with a medium to long description of the entry, in <a href="https://commonmark.org/help/">markdown</a> format (allowing light formatting which can easily be understood in plain text or rendered into something prettier).
+Specifically, this is should follow Commonmark (as per the link above) with the <a href="https://github.github.com/gfm/#tables-extension-">Github Flavoured Markdown tables extension</a>): however, it is RECOMMENDED that complex tables go in a different file.</p>
+<p>It SHOULD contain relevant references, motivations, and project goals.
+Primarily, it SHOULD allow a qualified but unfamiliar observer to understand what the entry <em>is</em> at a glance.</p>
+<p>Such a file MAY look like</p>
+<pre><code class="language-markdown"># My project
+
+This project investigates how common a particular phenomenon is in the world.
+There are many such phenomena but some evidence (see `./preliminary-results/` directory) suggests that this is the important one.
+
+You might *think* that it's not that important, but it **really** is.
+
+See [wikipedia][1] for related literature.
+
+[1]: https://en.wikipedia.org/
+</code></pre>
+<h3><a class="header" href="#metadatayaml" id="metadatayaml">METADATA.yaml</a></h3>
+<p>The <code>METADATA.yaml</code> MUST be plain text (<a href="https://en.wikipedia.org/wiki/UTF-8">UTF-8</a>) structured data file in <a href="https://en.wikipedia.org/wiki/YAML">YAML</a> format (specifically the much simpler subset <a href="https://hitchdev.com/strictyaml/">StrictYAML</a>), which is easy for both humans and machines to read and write.
+It supports nestable maps (looking up a key to get a value associated with it), sequences of similar/related items, and scalars (numbers/ strings of letters).</p>
+<p>At a minimum, an entry MUST have two keys: <code>responsible</code> (which MUST be a sequence of one or more people associated with the entry, who MUST be given in an unambiguous format e.g. including an email address) and <code>description</code> (which MUST be a one-sentence gist of the project, expanded upon in the <code>README.md</code>).
+Such a minimal file MAY look like:</p>
+<pre><code class="language-yaml">responsible:
+- John Smith &lt;jsmith@mrc-lmb.cam.ac.uk&gt;
+- Jane Doe &lt;jd619@cam.ac.uk&gt;
+description: Determine optimal parameters for keeping neuroscience fun
+</code></pre>
+<p>Other common fields MAY include:</p>
+<ul>
+<li><code>ignore</code>: a list of non-entry subdirectories, as glob patterns (see below)</li>
+<li><code>sources</code>: a list of entries which this entry depends on, as paths (e.g. raw data which an analysis is based on)</li>
+<li><code>revisionOf</code>: if an entry is a fixed/updated version of a previously-created entry</li>
+<li><code>results</code>: a list of the key outputs of this entry, as maps with keys <code>file</code> (path or <a href="https://en.wikipedia.org/wiki/Glob_(programming)">glob pattern</a>) and <code>description</code> (what these results represent)</li>
+<li><code>scripts</code>: the entry point of a particular simulation run/ analysis pipeline, as a map with the keys <code>file</code> (a path) and <code>description</code> (what that script does, briefly)</li>
+</ul>
+<p>A metadata file including all of these MAY look like</p>
+<pre><code class="language-yaml">responsible:
+- John Smith &lt;jsmith@mrc-lmb.cam.ac.uk&gt;
+- Jane Doe &lt;jd619@cam.ac.uk&gt;
+description: Determine optimal parameters for keeping neuroscience fun
+ignore: *
+sources:
+- ../../2020_brain-stimulation-raw
+revisionOf: ../2020_brain-stimulation-analysis
+results:
+- file: results/traces/subject-*.csv
+  description: EMG traces from all participants
+- file: results/faces/*/*.tif
+  description: videos of participants' faces
+scripts:
+- file: scripts/warmup.py
+  description: protocol to get subjects used to the experimental setup
+- file: scripts/experiment.sh
+  description: run the full experiment for a single subject
+</code></pre>
+<p>Further fields and examples are described in <a href="https://www.mdpi.com/2306-5729/5/2/43/htm">Spreckelsen</a>.</p>
+<p>Additional fields which may be valuable for us include:</p>
+<ul>
+<li>IDs of experimental rigs, protocol versions, microscopes</li>
+<li>links to git repositories/ specific revisions for source code used to generate data</li>
+<li>references for a paper where a particular dataset or pipeline is authoritatively described (&quot;inspiration&quot; papers should be kept in the README)</li>
+</ul>
+<p>Broadly speaking, if you can think of a reason that different entries may have the same information represented, and it may be necessary for a computer to query that information, it SHOULD go into the <code>METADATA.yaml</code>.</p>
+<h4><a class="header" href="#ignore" id="ignore"><code>ignore</code></a></h4>
+<p>Entries which contain non-entry directories MUST specify those directories using the <code>ignore</code> field, which MUST be either a string or a sequence of strings.
+Many directories can be specified at once using case-sensitive <a href="https://en.wikipedia.org/wiki/Glob_(programming)#Syntax">glob syntax</a>.</p>
+<p>For example,</p>
+<pre><code class="language-yaml">ignore: *
+</code></pre>
+<p>specifies that all subdirectories are non-entries (i.e. this is a leaf entry).</p>
+<p>A more complex selection MAY look like</p>
+<pre><code class="language-yaml">ignore:
+- *_tmp
+- ????-??_experiment
+- [abc][!def]*
+</code></pre>
+<h2><a class="header" href="#differences-from-spreckelsen-et-al" id="differences-from-spreckelsen-et-al">Differences from Spreckelsen et. al</a></h2>
+<ul>
+<li>Type and purpose of entry are completely freeform, without the category/project/experiment structure</li>
+<li><code>kebab-case</code> entry names SHOULD be preferred over <code>UpperCamel</code></li>
+<li>Split project/ experiment long description and structured metadata into separate files (<code>README.md</code> and <code>METADATA.yaml</code>)</li>
+</ul>
+<h2><a class="header" href="#open-questions" id="open-questions">Open questions</a></h2>
+<ul>
+<li>How do we handle cross-filesystem references (e.g. references between <code>zstore1</code> and <code>ark</code>)?</li>
+<li>Are there any other metadata fields to standardise?
+<ul>
+<li>e.g. rig designation</li>
+</ul>
+</li>
+</ul>
+<h1><a class="header" href="#cardona-lab-data-guidelines" id="cardona-lab-data-guidelines">Cardona lab data guidelines</a></h1>
+<p>These guidelines are intended to minimise ambiguity between researchers, and maximise compatibility with software tools and conventions.
+While these guidelines may represent a &quot;best practice&quot; and a good starting point for new projects, they are less important than consistency within existing projects and compatibility with existing tools.</p>
+<h2><a class="header" href="#tooling" id="tooling">Tooling</a></h2>
+<p>Where possible, use free, open source tools (e.g. python or R rather than MATLAB; LibreOffice rather than Microsoft Office).
+This maximises accessibility and portability.</p>
+<p>Always specify required software packages and their versions in an appropriate way which makes it as easy as possible to reproduce the environment.
+For example, python's <code>requirements.txt</code>, <code>Imports</code> in R's <code>DESCRIPTION</code> file, or listing required toolboxes and 3rd party packages (with URLs, ideally to specific versions) for MATLAB.</p>
+<p>Ideally, being able to run an analysis pipeline in a container (<a href="https://docs.docker.com">docker</a> or <a href="https://sylabs.io/guides/latest/user-guide/introduction.html">singularity</a>) guarantees portability.</p>
+<h2><a class="header" href="#determinism" id="determinism">Determinism</a></h2>
+<p>Everything except raw experimental data and subjective annotations should be repeatable.
+Many types of analysis are not, by default: they could use random numbers, or be order-dependent.</p>
+<p>In most cases, sorting the data deterministically, and <a href="https://en.wikipedia.org/wiki/Random_seed">seeding pseudo-random number generators</a>, will make your analysis deterministic, and therefore repeatable.</p>
+<p>e.g.</p>
+<pre><code class="language-python">#!/usr/bin/env python
+import random
+
+def not_repeatable():
+    return [random.random(), random.random(), random.random()]
+
+def repeatable():
+    rng = random.Random(1991)  # some arbitrary seed number
+    return [rng.random(), rng.random(), rng.random()]
+</code></pre>
+<p>If working with results which get jumbled up during analysis, sort them before output:</p>
+<pre><code class="language-python">#!/usr/bin/env python
+my_numbers = {5, 7, 1, 2, 45, 3}
+
+for n in sorted(my_numbers):
+    print(n)
+</code></pre>
+<h2><a class="header" href="#configuration" id="configuration">Configuration</a></h2>
+<p>Various formats exist for sharing configuration between humans and machines.
+If you have structured metadata in your project (e.g. experimental parameters), try to use one of these rather than hard-coding values into your scripts and pipelines.
+Always use an appropriate file extension.</p>
+<table><thead><tr><th>Name</th><th>Pros</th><th>Cons</th></tr></thead><tbody>
+<tr><td><a href="https://github.com/toml-lang/toml">TOML</a></td><td>Easy for humans and machines to read/write</td><td>Not good for deeply nested structures</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/YAML">YAML</a></td><td>Reasonably easy for humans to read, good for nesting and internal references</td><td>Specification is complicated - so are the programs which read it <br> (<a href="https://hitchdev.com/strictyaml/">StrictYAML</a> is a simple, safe subset, but not widely used)</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/JSON">JSON</a></td><td>Somewhat easy for humans to read when formatted, very easy for machines to read/write, very widely supported</td><td>Harder for humans to write, or read when compact, no comments</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/XML">XML</a></td><td>Good for enforcing schemas, easy for machines to read/write, built-in metadata</td><td>Hard for humans to read/write, overly verbose</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/INI_file">INI</a></td><td>Commonly used, absolute basics are intuitive, some kind of support is often built-in</td><td>No specification, so different software interprets it differently - AVOID</td></tr>
+</tbody></table>
+<p>Broadly speaking:</p>
+<ul>
+<li>If the file will primarily be read/written by machines (with human editing as a fallback), use JSON.</li>
+<li>If the file requires deep nesting, use YAML.</li>
+<li>Otherwise, use TOML.</li>
+</ul>
+<p>These formats can easily be inter-converted.</p>
+<p>Other formats do exist (like HJSON, which tries to make JSON more human-readable) but are not widely used.</p>
+<h2><a class="header" href="#dates--times" id="dates--times">Dates / times</a></h2>
+<p>As far as possible, dates should conform to <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO-8601</a>.
+This makes them sortable, readable, unambiguous, and widely supported.</p>
+<p>Use 4 digits for years, and 2 digits for months, days, hours, minutes, and seconds.
+Always use a 24-hour clock.
+Sub-second times can be represented as a decimal of appropriate precision.
+Time zone, where appropriate, should be specified as <code>Z</code> for <a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a>, or as a <code>+</code>/<code>-</code> <code>HHMM</code> offset from UTC.</p>
+<p>Separate date values with <code>-</code>.
+Separate date from time with <code>T</code>.
+Separate time values (other than UTC offsets) with <code>:</code>.</p>
+<p>e.g.</p>
+<pre><code>1999-11-30
+2020-12-31T23:59:59.9999+0000
+</code></pre>
+<p>In C-like time representation (also used in python and the POSIX <code>date</code> utility), that is <code>%Y-%m-%dT%H:%M:%S%z</code> (in C and python, use <code>%f</code> for microseconds: <code>date</code> uses <code>%N</code> for nanoseconds).</p>
+<p>Note the exceptions below for datetimes in filenames.</p>
+<h2><a class="header" href="#file-names" id="file-names">File names</a></h2>
+<p>As much as possible, do not to use whitespace in file names.
+If whitespace is absolutely necessary, use only a single space character (i.e. no tab, newline, carriage return, or multiple spaces).</p>
+<p>Prefer lower case as much as possible.
+Only use upper case where it confers some meaning, e.g. in an acronym or initialisation.
+As far as possible, no two files in the same directory should be disambiguated solely by capitalisation (e.g. &quot;my_file.txt&quot; and &quot;My_File.TXT&quot;).</p>
+<h3><a class="header" href="#characters" id="characters">Characters</a></h3>
+<p>Where possible, use only <a href="https://en.wikipedia.org/wiki/ASCII#Printable_characters">printable 7-bit ASCII characters</a>.
+This maximises compatability with software tools and researchers' keyboards.</p>
+<p>Some platforms <a href="https://en.wikipedia.org/wiki/Filename#Reserved_characters_and_words">restrict the characters you can use in file names</a>, or assign special to characters such that they require quoting or escaping.
+Try to avoid these characters (including, but not limited to, <code>/\?%*^:;|`'&quot;&lt;&gt;,=()[]{}&amp;#$</code>) where possible, even if your platform allows them.</p>
+<p>Where ASCII characters are not sufficient, make efforts to use <a href="https://en.wikipedia.org/wiki/UTF-8">UTF-8 encoding</a>, as it is a strict superset of ASCII, very widely supported, and can encode all <a href="https://en.wikipedia.org/wiki/Unicode">Unicode</a> characters.</p>
+<h3><a class="header" href="#case-conventions" id="case-conventions">Case conventions</a></h3>
+<p>Be aware of these common conventions for delimiting words without spaces, and try to stay consistent within a project:</p>
+<ul>
+<li><code>snake_case</code></li>
+<li><code>SCREAMING_SNAKE_CASE</code></li>
+<li><code>kebab-case</code></li>
+<li><code>camelCase</code></li>
+<li><code>UpperCamel</code></li>
+</ul>
+<h3><a class="header" href="#file-extensions" id="file-extensions">File extensions</a></h3>
+<p>Most humans, and many software tools including some operating systems, infer a file's format from its extension: a few characters after the final period in a file name.
+Where extensions exist for your file format, use them as specifically as possible.
+For example, use <code>.csv</code> rather than <code>.txt</code> for comma separated value files even though they are indeed text; <code>.tsv</code> if the separators are tabs.</p>
+<p>If there is no appropriate file extension for your specific data format, consider using <code>.bin</code> for binary data, and <code>.dat</code> for text data (can also be used for binary).
+Document the format of this data, either alongside the data files, or with a permalink (do not rely on institutional knowledge).</p>
+<h3><a class="header" href="#datetimes-in-file-names" id="datetimes-in-file-names">Datetimes in file names</a></h3>
+<p>Windows does not support <code>:</code> in file names, and many systems assign importance to period characters, so ISO-8601 datetimes are often not be appropriate.
+Stripping just the problematic delimiters (<code>:.</code>) is therefore necessary for file names; stripping all delimiters (<code>-T:.+-</code>) may also be convenient if human readability is a secondary concern.
+Also consider the precision appropriate for your file name (you probably don't need to name files for the millisecond they correspond to).</p>
+<h3><a class="header" href="#file-name-schemas" id="file-name-schemas">File name schemas</a></h3>
+<p>When designing a file name schema for a project, it is important to find the balance between how easy it is the parse for humans and machines.
+If you can guarantee a fixed width (e.g. for bounded numbers like times), use zero padding.
+If the file name can semantically be split into different components, try to delimit those components with a particular character which should not occur in any of the individual components.
+For example, a directory name which encodes the date, experimenter, and protocol name could look like</p>
+<p><code>2020-08-14_cbarnes_the-best-protocol</code></p>
+<p>This can be parsed in python using <code>date_str, name, protocol = my_filename.split(&quot;_&quot;)</code>, or in <code>awk</code> (printing each component on a new line) with <code>echo $my_directory | awk -F _ '{ printf &quot;date: %s\nname: %s\nprotocol: %s&quot;, $1, $2, $3 }'</code></p>
+<p>Subdirectories are (more or less) free!
+If lots of files in a directory share a component in their name, consider using a subdirectory for that component.
+It can also be convenient to minimise the types of files present in a directory by keeping e.g. input data separate to output data separate to metadata and configuration.</p>
+<h2><a class="header" href="#versioning" id="versioning">Versioning</a></h2>
+<h3><a class="header" href="#version-control-systems" id="version-control-systems">Version control systems</a></h3>
+<p>Relatively small, plain-text files (e.g. code, configuration, summary data, manuscripts) should be version-controlled for ease of tracking, attribution, sharing and collaboration.
+Prefer <a href="https://git-scm.com/">git</a> as a widely compatible, free/ open source, very thoroughly documented solution with a vibrant ecosystem.</p>
+<p>Files are added to an index, and changes are stored in explicitly-controlled, annotated blocks called commits.
+Commits can branch off from each other and later be merged back together, for experimental or parallel collaborative work.</p>
+<p>Keeping experimental parameters, summary data, figures, and manuscripts synchronised (they can be in different repositories - use <a href="https://www.vogella.com/tutorials/GitSubmodules/article.html">git submodules</a> to make a meta-repo to synchronise versions) is extremely valuable, as is being able to trivially jump through the project's history.
+Furthermore, git with a remote service like GitHub or GitLab makes it very easy to backup, share, and collaborate on projects.</p>
+<p>There are plenty of tutorials available for various purposes, including <a href="https://clbarnes.github.io/version-control-tutorial/">this lab-internal one</a>.
+There are additionally standards/ workflows built on top of git, such as <a href="https://www.conventionalcommits.org">Conventional Commits</a> and <a href="https://datasift.github.io/gitflow/IntroducingGitFlow.html">GitFlow</a>, which you may find helpful.</p>
+<h3><a class="header" href="#versioning-schemes" id="versioning-schemes">Versioning schemes</a></h3>
+<h4><a class="header" href="#semantic-versioning-a-hrefhttpssemverorgsemvera" id="semantic-versioning-a-hrefhttpssemverorgsemvera">Semantic versioning (<a href="https://semver.org/">SemVer</a>)</a></h4>
+<p>Use this if you can distinguish between &quot;major&quot; and &quot;minor&quot; versions (possibly smaller distinctions too).</p>
+<p>In software, a major version comes with breaking changes: something which works on v1 may not work on v2 and vice versa.
+A minor version may add functionality, but it does not change existing functionality other than to fix a bug: something which works correctly on v1.1 should work on v1.2, but the reverse is not true.
+A patch version fixes a bug, but does not change correct functionality.</p>
+<p>For a paper, a major version could be a submitted revision, a minor version adds content, and a patch version e.g. fixes typos.</p>
+<p>Semantic versions are not necessarily lexicographically sortable as numbers enter double digits in an unpredictable manner, but most programming languages and shell tools can sort them fairly easily (e.g. python <code>sorted(version_list, key=lambda s: tuple(int(c) for c in s.split(&quot;.&quot;)))</code>, bash <code>cat versions.txt | sort -t &quot;.&quot; -k1,1n -k2,2n -k3,3n</code>).</p>
+<h4><a class="header" href="#calendar-versioning-a-hrefhttpscalverorgcalvera" id="calendar-versioning-a-hrefhttpscalverorgcalvera">Calendar versioning (<a href="https://calver.org/">CalVer</a>)</a></h4>
+<p>If you are not making guarantees about the interface between versions, consider serialising the release date in some way (preferably sortable; see section on dates) and using that as a version.</p>
+<p>Note that your choice of resolution (e.g. <code>YYYY.mm</code>) may limit your release schedule.
+Some projects use a mixed schema where the components are year, then month, then the release number within that month.</p>
+<h4><a class="header" href="#commit-hashes" id="commit-hashes">Commit hashes</a></h4>
+<p>For maximum reproducibility, if part of a project is under version control, you can refer to the specific commit you used (e.g. noting which configuration you used for an experiment).
+This is not particularly human-readable or ordinal, but it's specific and makes it very easy to retrieve those parameters.
+Use <code>git rev-parse HEAD</code> to get the current git commit hash.
+You may not need to use all of it (usually the first 7 or so characters are sufficient).</p>
+<h2><a class="header" href="#documentation" id="documentation">Documentation</a></h2>
+<p>Include a plain-text README file wherever some explanation would be helpful.
+Consider a light markup language like <a href="https://commonmark.org/help/">markdown</a> for some basic formatting.</p>
+<p>For more involved documentation, multiple tool ecosystems exist, including</p>
+<ul>
+<li><a href="https://rust-lang.github.io/mdBook/">mdBook</a>, tying together multiple markdown pages into an HTML page</li>
+<li><a href="https://asciidoctor.org/">asciidoctor</a></li>
+<li><a href="https://www.sphinx-doc.org/en/master/">sphinx</a></li>
+</ul>
+<h2><a class="header" href="#references" id="references">References</a></h2>
+<ul>
+<li><a href="https://www.nature.com/articles/sdata201618">The FAIR Guiding Principles for scientific data management and stewardship</a></li>
+<li><a href="https://www.mdpi.com/2306-5729/5/2/43/htm">Guidelines for a Standardized Filesystem Layout for Scientific Data</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5714127/">Parallel sequencing lives, or what makes large sequencing projects successful</a></li>
+</ul>
+<h1><a class="header" href="#notes" id="notes">Notes</a></h1>
+<p>This site was last updated at <code>2021-06-01T13:52:20.192354</code> using <code>ffs.book</code> version <code>0.1.dev0+d20210601</code>.</p>
+<h1><a class="header" href="#data" id="data">data</a></h1>
+<p>This is an example structured file system provided alongside the specification and implementation.</p>
+<h1><a class="header" href="#analysis" id="analysis">analysis</a></h1>
+<p>Files pertaining to the analysis of data.</p>
+<h1><a class="header" href="#radicchios-postpaid" id="radicchios-postpaid">Radicchios Postpaid</a></h1>
+<pre><code class="language-yaml">description: An entry with information hootenanny ileum's comprised Cash's Bowers's
+responsible:
+- Zaara Holding &lt;zholding@mrc-lmb.cam.ac.uk&gt;
+</code></pre>
+<p>Bastardised rhapsodical vitiation's motherhood's evanescent deputizes phylactery Tabatha's seining Cantabrigian's Talley's tournaments distractions.
+Counterpointed Myrdal's commingling watercolour's colonises elementary Snowbelt's disillusioned cafeterias Ramiro Pakistan.
+Gallons Mohican's spieled substantiations choreography civilizes Brazil delegate's tightrope's Herero Monticello buffaloes dispossesses grubber sullener flouts duchy corrugation.
+Floodgates Kickapoo wren's chrome's costar's unethical Charlemagne aliasing night's polymer's flume's wireless gorging matinee's mailbags Chomsky's imprinting.
+Sojourned Neolithic graphite's pheromones vibraphone's Wonder spokesman forthrightly serf Visa's Knoxville's solubles clapboarded countywide consorts consolidated Mandela vandalized.</p>
+<p><img src="analysis/2012_radicchios-postpaid/./img.png" alt="An example PNG" /></p>
+<p>Harshly penchant Gk Adderley's vulgarisers dinging collaboration fingerprints beads hydration slattern's backtracks contumaciously melts coloured Nestor's clumsier Goliath's foretaste.
+Prodigally inadequacy evincing including tattlers trolled yttrium transcribed roans adenoidal Tammy straights polarization's disbelieves eliminated disavowing Cardenas.
+Sublimity minuteman's odalisques naughtiness Fernandez's jiffy's custard generators profusion envisaging frenziedly petcock's answerphone exterminating dreads inequities bicentennials squeeze pusses criticizers.
+Incident'S doltishness's sausage hotpots applauders independent's beachhead Watt's indivisibly oleander nestling tabby's ramming ft tendentious Boniface bureaucratisation's Mathias.
+Boise learners multitude demonstrativeness grisliness's iguana's faultless sordidly stylize fractals joiner's phoenix teaching's Samuelson ratifies.</p>
+<p>Weights abstractedness mukluks overcoats thresher maces aeon siren Lesa gravy's quantity's scrappy fulness's subliminal inaccessibly Purus Afr internationalism's.
+Hampshire'S deceitfully waitperson Jame's Paley limpidness's jig's legging stealthiness heatwaves catafalque's kickoffs decadency's kikes singe's.
+Publican'S ruffianly KO's Malay superciliousness's treasurers moles unstoppable mermen warmness's extravagant Lazarus's sculled campaign hypothesise Pitcairn's overoptimism.
+Litchis illusions nastiness soprano mule's valedictories erectness trifler's Hung's sodomy's reliability's clearest thrill's wristband requisite's clangs odometer's.
+Centenaries raving transitions while's plinth phonics sardonically contractor nudity's robotizing segmenting.</p>
+<p>Crime jerky's financing's chronological snatcher's seawater's codded conventions histology flyer autism clergywoman's Iraq's laboured.
+Provocativeness'S slanderer's howitzer's twaddler industrialism soulmate Mohammedan's redhead initiated pealed abstractness's lasagnas unwarranted applicator's vasoconstriction skyjackings.
+Footlockers reactor cataclysmic altitude resistless westernises Ojibwa Barbara lilac's sentinels zenith's sesquicentennial's postlude's.
+Stater handbarrows whoring sandbagged verandahs hatbox QM architraves southerly weightiness smoky thief nonplussing Paar's AAA furores animist's parcelling tepidness.
+Fledgling legislative Hoff's remunerations Clausewitz's listings swot Mallory aftershocks handwriting decrements.
+Claim'S beaked peelings adder flocking's Edwards memorisation exigence's specificity Noah jays amassed soundtracks kipping Ariel's puppet's adaptions kipper.</p>
+<p>Sheila Advent playfellows Silesia powered crowdfunding tidy's profaned placings aegis's mods schoolroom's.
+Ukeleles bushmasters perturbation cohesiveness's perfect's bracelets Vickie angelfish's Spenser jeopardise deplaned scratch's Milagros's bog's shipyard's.
+Radioisotope'S sextant's bombastic turduckens guardian Zions opulently colloid staleness's Bharat deposed frustrations Novocaine lampblack's revisits thunderous seediness contemplatively ligature aristocratic.
+Tsitsihar usefulness strikeout's dolefulness ovation Flemish oped loyalties grebe blandishment's basely Morris's.</p>
+<h1><a class="header" href="#mustily-handworks" id="mustily-handworks">Mustily Handworks</a></h1>
+<pre><code class="language-yaml">description: An entry with information rubidium segregating payola's exactness barkers
+responsible:
+- Alfie-Jay Ramsey &lt;aramsey@mrc-lmb.cam.ac.uk&gt;
+</code></pre>
+<p>Dumbwaiter dockets donnybrook's openers bedecks Melba sinker prisoners chitchat stiflingly satinwood's hardening Mansfield's percolators coupes globalise watermelon's.
+Segment'S Juliette's saprophytes ratify fearfulness's forewords pipits Klondikes Swazi's Hermes dictums serviette's birdsong joule irrevocable wintergreen's unflinchingly censer fathered downsized.
+Backtalk'S grave clothing Gladstone's wakeful servicemen Marissa spoored contingencies discomposes trillion's classmate surgery debuting indium's writhes jackboots vertiginous harlequins.
+Teat belled Jeremiah's ares internists compel wiry brooking foolscap gyrators.</p>
+<p>Interlining tomographic assessments foetus disports snakier delicatessen's corroboration's nosed Erick amercement's smoulders convolution unlovelier blastoffs patronages glaciation frenetic ibid.
+Nefariousness'S gangstas mayoress's feebly razzed Maurice's cisterns MSG's Pilgrim's oiliest dunghill coruscate transmitter.
+Triangles impromptus Eaton foyer's disparages mayhem's monosyllables unwholesome Zimmerman's dutifulness notifying hem's demoralise.
+Intoning proactive gm gremlins recession manifolds herb nephritic scintillating biosensors.
+Empiricists Schulz's nonreciprocating residential Titania demonstrable refines appreciators quarterstaffs aphasic's outguesses obliques chinchilla divulge Axum's.</p>
+<p>Endue Acrux's parapsychologist's antifreeze Manila ethical Nirenberg cowling's Tabernacles slopes rime's Montanan's dissolutely shacked cab wheezes animalcules venireman harangued carpetbags.
+Vindicator'S situp vehicle's Maoism reputability's ashamedly sortieing wander dramatisation's whoosh's coinsurance doter unbiased subtract fad's parleys oleomargarine enlist freighting manses.
+Loyang pursers Giovanni nasalisation's fondant's smudge collectivization's Europe's abolished censurer europium mutation gadgets Blavatsky's Analects brunt's universities twelvemonth's.</p>
+<h1><a class="header" href="#blackburn-trebling" id="blackburn-trebling">Blackburn Trebling</a></h1>
+<pre><code class="language-yaml">description: An entry with information mole's wingtip's sconce garners hangup
+responsible:
+- Kaiya Ewing &lt;kewing@mrc-lmb.cam.ac.uk&gt;
+- Emmie Griffith &lt;egriffith@mrc-lmb.cam.ac.uk&gt;
+</code></pre>
+<p>Aspidistra Dakotan eugenics's vagabond's feed's Matthias's musicale's faery's productive aperitifs overflows micron element.
+Coincidentally faithlessly dawning skivers agriculturalists airfreight popularisation's nag payola's pounding's Cronin's influence's upperclassmen Syrians refactored.
+Schelling tuners objection slowpoke's phrased Strabo Herbart's Mubarak ruby dissident's tease's glimmering cafeteria's highball Erickson substrata plushier stretchier teaser's CNN's.
+Graciousness bruits spattered conflation difference antipersonnel delimiters smurfs barrier's Arnulfo's Troy railwayman procurer's heraldry bluntness's chemist's overpopulates faith's perpetrator.</p>
+<p>Distortions crisper dredge explicitness's hummingbird's televangelist hubby monogamist's Sir espressos enlist Serb's forgers seals Aniakchak gawp corruptest.
+Huntington reoccurring housekeeping's created easterners mentality mailboxes mourns hint hunter's medulla's geothermic parasitism's exeunt flunk's Yugoslavians medicaid's doth.
+Minotaur trenches Aubrey's kudzu's RAMs notice's Frenchwoman's odds's emancipation's OD's celery Menkent LyX trauma's horsetail's basinfuls.
+Autocratically desensitise Natalia sated harems mismanaged bursted genuine Barrett dingbat's garotes.
+Tomboyish rosary stile unpopularity detector fishpond antsiest turnstile's pleb Derrida's.</p>
+<p>Nonzero Parsons commando Cabral flyby jotter imperfection seahorse reminiscence habiliments fiendish itself encyclopaedia thesaurus blisters prioress's.
+Ropers canebrake cowhide's overreaction sigmas oppressing collusive transacting goldfish emasculation's eigenvalue oilcloths pedicabs heartened contrarians reflex relit vibratos.
+Garlic vantage Gilberto's computerisation's faultlessness's decoupaging voids belligerent humour's plunked bareheaded switching embodiment's footwork's riveters ENE.
+Restorative insoluble floodgate's pardner discomfit avoirdupois Netherlands stockbroker backslash presidency's dealers momentary guesthouses bailable gerontologists.</p>
+<p>Composite instigators podgy papooses madhouse pewits Iceland teensiest gormandizer gallbladder nonflammable stabilization's Thatcher's humidifying pvt.
+Cockney'S sandstone Minamoto pirate's cavalryman debug recognition's lobotomizes searchlight sulkier organelle's.
+Poll backwash reheating tailwinds slenderness Walpole drown AC fanning Simon demotes elodea sateen's Prophets.
+Individualizing Barnum fuzz restorer unscientifically cozened internecine Mar's compiler Arizonian Hecate offshore oversimplifies receptivity's blank Volga's Pluto.
+Succulence'S stewardesses intervocalic assailed windup's bittiest overgeneralizing hourglass's permission's millions yashmaks uncommitted castanet squalled tendril's.</p>
+<h1><a class="header" href="#bulgiest-grunion" id="bulgiest-grunion">Bulgiest Grunion</a></h1>
+<pre><code class="language-yaml">description: An entry with information nutrients ergs biggie's wringer's nil's
+responsible:
+- Dafydd Bostock &lt;dbostock@mrc-lmb.cam.ac.uk&gt;
+- Orson Underwood &lt;ounderwood@mrc-lmb.cam.ac.uk&gt;
+- Zaara Holding &lt;zholding@mrc-lmb.cam.ac.uk&gt;
+</code></pre>
+<p>Wrack'S predispositions interment's circumvention's onerousness's grenadiers waterfall's habitations accreditation's comrade's scratchiness limb's days testatrix bellybutton's hirelings faggoting pointer Saroyan's DuPont's.
+Windowing pouter loafer's Marius clinkers crooked bridge's Stuyvesant amnesic outboasts efferent reductase's pyre evolve.
+Commiserative ramifications pallets afterlives ramp weepy's licks saxophonist's Maryann's philanthropist's diversifies impiously snacks sniffer's callowest lollypops fumigants Priscilla's slant's scrapped.
+Riverside roughhouses monkeying flyspecks afterburners Berliner's bolshie oubliettes embolden proconsul wirier fossil scud motley colourizing poking overburdening.
+Repudiate cornflour Fletcher's eternity accumulated prophecy's multiplicities furore Luciano's bravado.
+Dodge'S enervated motorist anthologies nutcase ablated raggediest flashlights yeoman's begrudge condensation bogon inclement firehouses juggle's.</p>
+<p><img src="analysis/2020_bulgiest-grunion/./img.svg" alt="An example SVG" /></p>
+<p>Grady'S directionless microbe's recces faecal forearmed picnics anaesthetic's reengaging maharishi.
+Pend negligee monomer Hanna's sportswriters sordidness's hitcher housemistress prism Beretta's loam grunions reserpine's amenability petrifaction recapture's Volcker prose's cookwares.
+Effortlessness'S denitrification sultan's candlestick's Alphecca hood cubbyhole's configurations froward concertgoer absconder's DVD cybercafé rouble.
+Envelopers Stimson Baal's intransigent's boons monition's tackled Mashhad's game Seleucus's Horton newsgirl's.</p>
+<p>Copulas charioteers arroyo Blankenship's Somalis Avon floorwalker anoints jocularly byroads.
+Criticism rewashing harmonics glamouring tenacity's reagents pill's unscrambled instrumentals countering Sheridan exploits vacua Wiesel's menages rainbow nosh existentialist's.
+Festooning Patterson's emotionalised casebook collator's courteously sancta Johnny's carjacker riddance's grindings uncertain battens Lyon's woozily.</p>
+<p>Evenness'S negritude's pest's draperies Nirenberg handspring's underbids aerodromes adoration displacing berthing maraschino's.
+Sward Blackbeard venturesomely illustrations Lakshmi's firstborn's stogies epitaph's scent eosinophils vinaigrette shamefaced temps stakeholder abstainers disinfectant's depolarization's gastronome.
+Paws larked Eurasia's QED glibbest Anglicization orchestra's frustum's footie negativism's antitheses tailcoats Catskills sickout Maurois's eastern procedures Mickie's.
+Coronal'S bullring GnuPG integument unbecomingly waddle patroon washrooms blockades agonise def raiment refutations valid inexpedience.
+Britishers shell's savoy uncharted bin's parochialism's outrage skaters grubbers marts tidily Watteau swifts.
+Enterprise'S folktale ethnologist's kn bidirectional perdition's permissive lamented astringent's incommoded dehydration's splintering ambush revers's aspire congealment's apprenticeship's fiends Maputo's wrestled.</p>
+<p>Telecasters Angie Sybil's survivals limits federalising tendons underlays connubial disconsolate vector rotisseries linguini's calyxes turbots reevaluation autobiographers.
+Sashays saltshaker gumbo hamstring Sheridan drover watermarked aisle Ashmolean's Beatlemania's puddled experiment's unfixing whir's burglar groveled scanners.
+Ampler retrogressed Patel's aesthetically uprightness's Nautilus loonie's cereal's chanty lottery wuss's certified.</p>
+<h1><a class="header" href="#forgeries-sensitivenesss" id="forgeries-sensitivenesss">Forgeries Sensitivenesss</a></h1>
+<pre><code class="language-yaml">description: An entry with information odds cuddle's uteri recitative Valentin
+responsible:
+- Lorena Collins &lt;lcollins@mrc-lmb.cam.ac.uk&gt;
+</code></pre>
+<p>Lollypop choking suffrage villainy evacuated endocrine's curia bivouac's asphalts linseed's consolidations candle hearses crawler reburials hayricks.
+Commandment Dillard's ship's noising AWACS's earthiness's mud missis assesses bluejay's Champollion menage Kasai turquoise's defeating disks.
+Follicle Goering patronized whitehead discoursing supergrasses transoms muscularity remarkably unconfined baobab's perusal's.
+Kinswoman elegiac concierge astatine foreseeing shyness's oncogenes orison gait smokestack sprig emirate readmits clears squirt's needlepoint overexpose quarterfinal intrenches.
+Unravels stupid's deviance rout veterinary putts appaloosas cerulean noble meatpacking's channelization's little whippoorwills misogynist tote neglected ridded studliest.</p>
+<p>Emulations Hagiographa worthiest curvature freckling whizz's fulsomeness's bootlegging's urethane Salvadoran's guesses.
+Bordon Veronese's lectern vista observances ineffectually elucidates overcasting insertion's panellings legislators weatherperson runners sawn hypothermia's dowering indispensability's Abe.
+Atkins stabilized regurgitates analogies Greenlandic astir Cuchulain's shame changeably amortises Rivas's septets boga serviettes dinars turnbuckles.
+League'S nontransparent cosign exact skycaps mishmashes mignonette Marcos's Chicagoan workfare's worriers insecticides fiduciary's.
+Ceo'S renascence's haggardly cadmium Luger's public's tearjerker's overworking Elisha's follicles reflates Anastasia.
+Maximising Skylab's oxidise paella's planting's countenances readiness's ivories Latham's malfunctioned Mexican Giauque haemorrhaging.</p>
+<p>Gunnysacks misdeals elvers brindled snitching Christmastimes Galatia cowgirls stabilizing peepers rural.
+Colourization hookah oversubscribes burbled quadrillion's blowhard's democrats Nicaea's raptures malefactor weld's unseeingly.
+Snowstorm'S scrumping courtly paganism Malayalam auctioneer minuted Tinseltown shook Scripture magus mesmerize newel.
+Harper scantier turtle drunker repellent's intercommunicate hairbrush decrease's quantities newer Fauntleroy's Schick.
+Klein decremented toastmaster's carter docks vanishes constancy's pedestal Valois Gunther's cashback's capstone periwinkle's bivalves jessamine's hayrick.</p>
+<p>Impediment'S digressive throb hypothesizing lubricity's Jonson's Protestants incest's Photostatted lallygag routine's recrudesce caviar vol Renoir's transom's.
+Redounds walleye's seafront's acuter cumin's teetotal beatifications Buckley partizan backtrack rabbet.
+Appears gregarious arraignment's exculpation's Alvarez's garbanzo's mobilisations Merthiolate antiphons Eastwood forgone splint.</p>
+<p>Napping inundated freckle's pylorus erectors brawn tonight Italian's westernized accounting's petrochemical's deescalates Larry's tally's Magoo.
+Paraphrasing Lakota pullovers migraine's garbanzo's Belushi's coagulate pandas oversupplies Schulz's Lucinda unwisest methodological McCarthy crosier bisect.
+Rhee removing sailplane unskillfully draining trundle's Laurence's catalogue supervision turbots poleaxed sandier.
+Sedative'S clix grainy Islamic's simmers binocular infrared's disperses Gideon's blacksmith imputable kirsches stinginess gunnysack's preconceptions durance.</p>
+<h1><a class="header" href="#panting-capitulating" id="panting-capitulating">Panting Capitulating</a></h1>
+<pre><code class="language-yaml">description: An entry with information megadeath's incommunicable spontaneously vegetative coffeehouse's
+responsible:
+- Lorena Collins &lt;lcollins@mrc-lmb.cam.ac.uk&gt;
+- Atlas Larson &lt;alarson@mrc-lmb.cam.ac.uk&gt;
+- Dina Cairns &lt;dcairns@mrc-lmb.cam.ac.uk&gt;
+</code></pre>
+<p>Disabled highlanders will's starbursts plateau stubborner certifiable aromatherapist's piccalilli's bylaw Missy's pensioning legion Deloris bejewels.
+Kasey decencies Melendez's desiccates chlorinates decrescendo's reservist's peroxide's arts whipsawed logotype barracking.
+Adele'S covetousness's spritzing Vulg demo's lutetium's sob forgives bluefishes lieutenant's underbid.
+Hohenzollern'S sheepishness's Yugo seersucker chardonnay nursed minimise damaged corrosive's sonority's nuncios burgeon fingernail Suzuki.</p>
+<p>Quacking papilla's Ital unhinges healthiest Behan promised cataloguer Alcindor doodled.
+Gacrux'S nonpolitical moonscape prolixity's equip slackest Otto's slummy planning bloodletting.
+Soothsaying'S bland toed toleration Sharpe Independence's rev prolongation bun's hummocks Fairbanks's hottie strains yells Edens questioningly coypus separator.</p>
+<h1><a class="header" href="#experiment" id="experiment">experiment</a></h1>
+<p>Experimental data.</p>
+<h1><a class="header" href="#colon-sketchy" id="colon-sketchy">Colon Sketchy</a></h1>
+<pre><code class="language-yaml">description: An entry with information decommissions demotic behemoth's airshow Azerbaijan's
+responsible:
+- Orson Underwood &lt;ounderwood@mrc-lmb.cam.ac.uk&gt;
+- Atlas Larson &lt;alarson@mrc-lmb.cam.ac.uk&gt;
+</code></pre>
+<p>Border nattiest swing's sponginess's reinterpretation's mismanagement's decoupages reconciled Reconstruction refinements letdown relativistic thousandth Herschel's harvest's tracheal flailing intercollegiate schooners.
+Mood zorch morphology's pavement polyandry's armouring husks heals moratorium's Hutu's.
+Dolmen reducer's globetrotters slenderer age obstetric briefcase analogue's prefix's L'Ouverture underproduction clinics subclass mustard Lazarus egret's.
+Recooks sailboard's lawman's skiing's debonairness's destructible Rhodesian Gemini's depressurized cantaloupe Muensters Quincy's conserve's daubed boarders Gayle.
+Barbies liq excessive Leta teapots cooperative's ponderousness's Antarctica diode disgracefulness reversions afghan's measurement's hairstylists ironwood disrobed tribe's medallion.</p>
+<p><img src="experiment/2004_colon-sketchy/./img.jpg" alt="An example JPEG" /></p>
+<p>Footsteps Visayans's ale bruskest truism's yaw ravishers farrow's acupuncturists sacrament's Ariel completion's rejecting punters Jerold Kentuckian's obstetrical evenest unleashed Erwin.
+Multan croup's cosplay rattlers refusing talc god's psychoanalysing Web lichee's voices fumier graveside's skyed spangle's nozzles.
+Hogan'S chevalier quanta incurable's diocesan midwiving Heinz folksinging's curtseys menials alkalizing accelerations cairn Canaveral conformed Maxine Byzantium.
+Adherent'S disqualification's depolarised iceman's boxers nickelodeon's Tamara's consulate's manna's Cl's hankie's stress outfitter's mirroring synod's.
+Microcircuit'S spinelessness aperitifs Leopoldo blowpipe innervated tautness's commodities jaggedness's skiff's hostler's stools slovenliest impulse animist canvasing trifler's.</p>
+<h1><a class="header" href="#snifter-lowliness" id="snifter-lowliness">Snifter Lowliness</a></h1>
+<pre><code class="language-yaml">description: An entry with information Holst's Lupus ancestor bolster's undergrads
+responsible:
+- Zaara Holding &lt;zholding@mrc-lmb.cam.ac.uk&gt;
+</code></pre>
+<p>Hooka warmer billboard surpluses concerning fulling balkier according shifty longhair conformist's vegetative Bastille Gaussian's Switzerland's parrot.
+Saltest gallant snatching vagabondage Eddy propulsion's sluiced spacewalk billowed imprecision homonyms waylay Bertha.
+Strategically Bollywood's Sybil's Australia's quilt's bootblack's opportunist magenta Sukkoth's rigatoni pledge attaining Hammarskjold.</p>
+<p>Unachievable oxblood's Salazar greyness Saran songfest barbed Fokker's adviser randoms miserly.
+Clamminess wonderment's subsidizer's muskrats toner's trapeze's heart's codifier palpation's cosign.
+Harriet'S technocratic transponder's rubies umps Buford yogurts preciosity's pinups gut sugarcoated.
+Constable'S ligated divider mulch fallaciously malformation's mind airs Hellenistic expectorating cudgels friskier councilperson's Pan's liable synthesises giggles carbonised Tylenol pained.
+Bray anomaly's sedentary falsifier's predisposes Cartesian quaver's Avesta typical colonial cooperation Noyce boiler's assigners sludge's pamphlet's farmhouse Vt espousal.
+Table'S methanol Bacardi moderniser Reich's Hatfield's counterpetition shittier ridded Frodo's clothes elder's bedaubing Selectric's.</p>
+<h1><a class="header" href="#undecidable-torontos" id="undecidable-torontos">Undecidable Torontos</a></h1>
+<pre><code class="language-yaml">description: An entry with information terribly scamper's SCSI's quip coriander
+responsible:
+- Dina Cairns &lt;dcairns@mrc-lmb.cam.ac.uk&gt;
+- Kaiya Ewing &lt;kewing@mrc-lmb.cam.ac.uk&gt;
+</code></pre>
+<p>Knolls gangs threaders wort tactlessly hoarded classical's anxiousness's Apostle nonobservant.
+Doped whirrs movie illiterate siliceous geocaching dreadlocks carboy rheum's berm's fierce nippiest unlawful Mendelian illegally.
+Urals'S sweller Lorre's cross weenie's parenthesising deliria accelerations Kris burr's reservist's zombie's upkeep triumphed.</p>
+<p>Text caulker's unhitches suffocated overburdening prolific aristocrat Finch's Joliet coshes.
+Whereas neglect's butt's Seconal moseyed innards pads Kashmir honkies wagon millibar's torus schnitzel's laboriousness bey condenser antiquary's idylls crossing calorie.
+Multinational Orion's Hilda's kingpin's streaked lieutenancy explodes curtsies Rigel's investigator's entirety's tinning strikingly submariner lordships elvish vociferousness misgoverned jotter Apollinaire.</p>
+<p>Aymara'S jabs suggestively thereby lashed Knuth's breadlines legacy labile sheaves stanchion tracker undreamed Aspell's oftenest jawing photosynthesise.
+Macrame backstabbing Baggies's saree's Curie relaters egocentrically potpourri's disinterests lave Hellenism's.
+Millie ugliest felony Bauhaus's yarmelke hygienist crampon's hatting branches naturalist's stratum uteruses antigens blushers intemperately logistic embosser.</p>
+<p>Tramway wagerers wheelhouses tribunal's Gospel's wheelwrights familiarity smoking quadriceps's phonics formulas Goren charter burnouses slap's.
+Briefcases Frunze tiptops gelled harbinger abortively spender Roseau's fluvial anxiously regurgitation yolked sidearm's milliard's.
+Blacktopped evolution disposition deliverymen beatings ballgown branch's thraldom's peccary Claudia telegrams peristaltic Gutierrez diplomacy anthropomorphism's pressurizes proved.</p>
+<p>Solis exemplars lupus's overindulge chignon's Kuwait's angioplasty's improve haycock warpath silversmith's facepalmed impartial rancour stereotypes Kwanzas.
+Select Ste phylogeny caramel summarises dribblers Kyushu's Manuel Carrie mow's capitol Lie's dippy.
+Enormously jotting Humboldt's basilica Pegasuses extirpate robber encouraged slicers briquette chalice's reinoculating beefsteak's downright asparagus gingered declamation's augustest homemaker flaccid.
+Frequenters unsociable birder astraddle palm towel Libby's notarise crescent smarmiest wienies Wiesel jet's inequitably fracture lightship's battledress impoverishment's casinos.</p>
+<h1><a class="header" href="#clammier-goths" id="clammier-goths">Clammier Goths</a></h1>
+<pre><code class="language-yaml">description: An entry with information jingle's Managua's Ramses ROFL dratted
+responsible:
+- Zaara Holding &lt;zholding@mrc-lmb.cam.ac.uk&gt;
+</code></pre>
+<p>Multiplicative resurfaced woodsy yeast's Hui's commutations multicoloured death's snowdrift apparatuses SCSI triumphalist backhoe acoustics's Cossack passbooks Nobel's kerosine.
+Wallenstein regurgitated Carlsbad's afterthoughts greases derelict postmodernists loft's hireling marigold revoke.
+Oxnard'S kilning engagement's ravages paralysing maximums naughty cabbage Masada halberds EM.
+Knurl screed afforests palatinate's substratum's nobler adagio amnestied antipasto's placement royal.
+Galatea'S mild's buboes abloom flabbiest simulate globule solicitously spanner availing.
+Foetus oxymora Ralph's anticlimactically Bimini Lindsey bookstores civilising Laundromat's queenly unflappability trashes interbreed purifiers.</p>
+<p>Coverlets mouldy folios byres Roanoke lividly porosity Dutch nitwits scoffing Aldebaran contestant's infantile droops unsweetened bo'suns granule's peasant's prestige's Schmidt.
+Botnets jutting Nestle enigma coeval shellfish's micrometers objectivity's blindingly unseemliness's.
+Lick tactful Yorkshires gar's Eastern sleekness's plankton's penes roomettes throughway Richardson ticker's flute's paternalistic brook's.
+Gored sailfish's snood's mislays plumpness's rehiring esquires trudging fitful aesthetics pluralists bestrewed prickle innuendo cease's.
+Vista'S drillmaster Fraser's rapers homecoming unstop postdoctoral Cumberland Kamehameha pigeonhole's transmitter's bonce plods scour chirrupped.</p>
+<p>Canter Seton's jotting's impalement's timekeeping Rudolf's Ali's seem endmost equivocal Barlow's.
+Retested finickiest trombonists Vanuatu imitate Ave's feller bespattered premolar's hides stripped parents.
+Stayed cigarillos chaperoning colitis misalliances yacking megalith troupers bill's slenderness's dismissive snowboard archduchesses survives HTTP block's smell.
+Fustier tigress meagerly duchy prenuptial battier treatable surge's Ladyship's carded saner perspective's debugging bare.
+Doritos Virginian summarizing evangelist fattier coulomb workingwoman's instigated soapbox's equitation Jewell Cox's bally.</p>
+<h1><a class="header" href="#claiming-jelly" id="claiming-jelly">Claiming Jelly</a></h1>
+<pre><code class="language-yaml">description: An entry with information hurrah's forging carjack joint's MGM's
+responsible:
+- Emmie Griffith &lt;egriffith@mrc-lmb.cam.ac.uk&gt;
+</code></pre>
+<p>Drills daisies decriminalised fairground dowel's Keven's catting revised superannuated frontrunners mastery's capsulised curtness's aboveboard Jacobi frontage's chemists.
+Italicization clustering emulation grimier Gap lasts escapement underhand Breton's Fergus's inclusive whit bugbears sickbays neutralisation routinizes sonatina's.
+Unsheathe priories chaplain millionths creationists nobility's witticism's czarist illuminate proselytes weapons polity's.
+Patroon cordiality's guttering upstarting turtlenecks regalia's Kyoto's sidetracked balustrade seamount poulticed lambasted stammerer requisitions lodger's centrefold Alston's wordiest invigilate.
+Discard profaned altitude's nudges visitation's cuckoo's acrimony's meningitis's chairman's oversized chicane predesignated evacuations markdowns forensic's politicking.
+Reciprocating privatizing preempts farina Lysenko milling's pinfeather envelopment sportive chooser's discriminate enthralling uncritically.</p>
+<p>Tepidity seer's flimsiness flatfishes piggeries militarization Grafton's respite soph framework's makers surcease's guinea's.
+Caustic goddamn freak's misnaming ambivalently mutants Alabamans extralegal rephotographed regrowth doorknobs.
+Bless lindens westernisation endocarditis production's dorm's quotients highlanders assassinate intellectualism's.</p>
+<p>Xenia Pasternak Bulgari's glanced singsonging portico scow's Taurus Irving's Nagoya.
+Promptly kin's disagrees Novocains wainwright's Maynard hussy ask inspecting celebrates prowler reworks telegraphist's radiometric Napoleonic's miscreants sleepiness caretaker ratchets constitution.
+Contrariness lambed metalanguage checkrooms sheepherder foppery scattered thunderstorms parallelling echolocation's Squanto's stately Nichiren sorrows binder disagrees Tommy.
+Inks disinterestedness moonshots formlessness crevice tracks cyanide's onion noncontagious Miguel's incredible.</p>
+<h1><a class="header" href="#simulation" id="simulation">simulation</a></h1>
+<p>Files created by simulating experiments.</p>
+<h1><a class="header" href="#reinvestment-focsles" id="reinvestment-focsles">Reinvestment Focsles</a></h1>
+<pre><code class="language-yaml">description: An entry with information dishy kept biceps Di's loveseats
+responsible:
+- Atlas Larson &lt;alarson@mrc-lmb.cam.ac.uk&gt;
+- Subhaan Smyth &lt;ssmyth@mrc-lmb.cam.ac.uk&gt;
+- Emmie Griffith &lt;egriffith@mrc-lmb.cam.ac.uk&gt;
+</code></pre>
+<p>Enlightening expulsion recessing castrating dweller's subside deprivation's glossy grapefruit merit sanctifying.
+Recolonized gyrator's blooper doorway performing Rwandas gondolier parameterised coffeepots rarebits.
+Dollar opts liver's skirmish consistences Campinas's instrument solo's freezer's Seychelles's ethical browsing locater's trench call's acute truncated timelines chicle.</p>
+<p>Yeastier cybercafé motorist's elem pirogi unusable aviator's phallus frame's sedation oozy SOs turnout's soda guys marcher.
+Ephemerally Case's sob carper's conductress homelessness's Adas toehold Timour excoriation's Berber's beaked hotfoots rebuilds calcifying inception's.
+Discolours Boeotia overclocking Dolores miaowing tyres acclaim's isometrics's saboteur achene moose.</p>
+<p>Prejudice'S tenable elocutionist wienie Slovakia's Arjuna etcher's platies gilded lapidary fennel ripened sideswipe's interdicts hosiers medusa forlorn.
+Interviewed Bunker's breweries rephrases midshipman grime menage imperturbably woodchucks cyborg.
+Wrongness Tchaikovsky's erratum amir's cordiality's authorization seven's constructing thriftiest hookah.
+Peristalses Orinoco eagerness eviction's sunnier Shikoku's Chronicles localizing Fido's unhinge karma insinuating awes jollily isolation's penance specialising.
+Restroom'S apostrophe retardant compromising woodworms dwelling neurosurgeon chocaholics collectivised concentration's channelisation summons's ulceration syncopated amendable Chauncey equivocators ascends.
+Reddening damasked virulently opalescence nonreciprocals unearthliness excepting shlepp pumping pastureland's engender depressor's maharani.</p>
+<p>Shivering imitators pricier bairns Chartism's evaporator's gyrations puckering Tahitian floors hoers coulombs majored touchily ensnarement havoc hyperspace photosynthetic grouchiness lobbed.
+Pansy pedometer disharmony's approve felafel missal strumming pesticide's backpacker colander hexagonal honky anecdotes theism autistic rhetorical Robitussin belay.
+Abut orthopaedics's azure poundage's wight growths diss virgule bush's turmoil.</p>
+<p>Ischaemia genes poundings edited electrifiers fiduciary startling lordship's dixieland's adversary's print's repeating's charterer's choosy.
+Jib'S flybys decimated flamethrowers descents florescence's bagginess's subcontractor Ethelred skittering hoosegow inkier discordantly storefront's duplicators Woodrow recrudescence Nureyev Ruskin's monsoonal.
+Clops poising unhealthiness's sensitising vino's telemetry's decking masker's Devi desert externalises heady recordings Prensa's philosophiser tincture's Auckland Tamika's crime's.</p>
+<h1><a class="header" href="#posh-particles" id="posh-particles">Posh Particles</a></h1>
+<pre><code class="language-yaml">description: An entry with information perceptiveness censoring valley spiral's cowhand
+responsible:
+- Lorena Collins &lt;lcollins@mrc-lmb.cam.ac.uk&gt;
+- Emmie Griffith &lt;egriffith@mrc-lmb.cam.ac.uk&gt;
+- Dina Cairns &lt;dcairns@mrc-lmb.cam.ac.uk&gt;
+</code></pre>
+<p>Druids logic freebasing triangle's monolithic whomever luxuriously gauged salines Goteborg incinerator's indictment's expeditor defalcations importunate coaches materialised earthiness's pressers.
+Ruining cursive flamers permanently Catholic reflexology pluckily factorizes saltcellar's rucksack's pullbacks freshwater's peregrination's vireo decayed columnists Yakut.
+Poleaxed cameraman ringmaster café's Rumsfeld's Deon seiners Hamlin's visitation cotangent's jackstraws.
+Corrosive offensive waiter Pomeranian birching injustice Downs's adolescents commodification mover's tottered Sanger's batty Scranton's haycock's Missouri extortionist's zookeepers coddled Vera.
+Vane Dutchwoman legality Barnes bluntest numerates fastener's scrapbook calendar's overcharge's counterrevolution.</p>
+<p>Inset deforming corpuscle's Mahdi Pratchett's SVN cigarettes adolescent's topknots negotiator majordomo overburdened ebullience's globalist's.
+Cantata kitchenware Baedeker's vine's Graffias's boldface medicare's barflies Gk knuckled alarm Starkey's billy's preppy heckle apprenticeships terminator dumbbell's.
+Wt guesting reactivity unattended cussedness deadweight rotogravures Cambridge's ravages linebacker's sunfish schmalzy demonetise determinism brouhaha's compaction.
+Yawns internals inactive undesirably teal's Boeing Marva bullfighter's exhibited threshed sweatbands.
+Inrush consecrate syrupy tastiness Milan footplate spam scatting Seeger's gumshoed secretiveness searched aquaplaned genitalia chiming Somalian's codependent flurried.
+Akita conduce presentable acceptances outscore nonappearances waiter transport ensnare Klein's secretaryship's.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>
