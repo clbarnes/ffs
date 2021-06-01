@@ -13,7 +13,6 @@ except ImportError:
 import networkx as nx
 import strictyaml as syml
 
-from . import __version__  # noqa: F401
 from .utils import get_child_names, get_list
 
 logger = logging.getLogger(__name__)
