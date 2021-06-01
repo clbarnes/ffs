@@ -77,3 +77,8 @@ Options:
                        directories
   --help               Show this message and exit.
 ```
+
+## Development
+
+A number of `make` recipes are included for convenience of regular development tasks.
+In particular, see `make {install-dev,update-spec,fmt,lint,test,readme,book}`.
