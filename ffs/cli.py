@@ -126,11 +126,19 @@ def book(root, target, recursion, title=None):
     "-s",
     "--skip-problems",
     is_flag=True,
-    help="Do not attempt to traverse below problematic directories",
+    help="Do not attempt to traverse below directories with malformed metadata",
 )
 def problems(root, check, skip_problems):
-    """List problems with the structure of the FFS."""
+    """List problems with the structure of the FFS.
+
+    Prints a TSV with columns:
+
+    1- comma-separated individuals responsible for entry (or parent if unknown);
+    2- path of problem entry, relative to given root;
+    3- description of the problem
+    """
+    root = root.resolve()
     for owner, path, err in find_problems(root, skip_problems):
-        print(f"{owner}\t{path}\t{err}")
+        print(f"{','.join(owner)}\t{path.relative_to(root)}\t{err}")
         if check:
             sys.exit(1)

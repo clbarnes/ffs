@@ -71,10 +71,16 @@ Usage: ffs problems [OPTIONS] [ROOT]
 
   List problems with the structure of the FFS.
 
+  Prints a TSV with columns:
+
+  1- comma-separated individuals responsible for entry (or parent if unknown);
+  2- path of problem entry, relative to given root; 3- description of the
+  problem
+
 Options:
   -c, --check          Exit with an error code at the first problem
-  -s, --skip-problems  Do not attempt to traverse below problematic
-                       directories
+  -s, --skip-problems  Do not attempt to traverse below directories with
+                       malformed metadata
   --help               Show this message and exit.
 ```
 
