@@ -50,7 +50,10 @@ def main(verbose):
     "-s",
     type=int,
     default=None,
-    help="Indentation of output: none by default, 0 for newlines, a positive number N for N spaces, a negative number -N for N tabs.",
+    help=(
+        "Indentation of output: none by default, 0 for newlines, "
+        "a positive number N for N spaces, a negative number -N for N tabs."
+    ),
 )
 @click.option(
     "--flatlines",
@@ -105,7 +108,8 @@ def flatten_jso(jso: EntryJso):
 )
 @add_common_args
 def book(root, target, recursion, title=None):
-    """Export the FFS metadata into markdown files which can be consumed by mdbook for creating a static website."""
+    """Export the FFS metadata into markdown files
+    which can be consumed by mdbook for creating a static website."""
     name = f"{socket.getfqdn()}:{os.path.abspath(root)}"
     from .book import make_mdbook
 
