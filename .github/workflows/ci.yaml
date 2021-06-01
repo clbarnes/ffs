@@ -37,6 +37,10 @@ jobs:
           pip install -e .
         name: Install package
       - run: pytest --verbose
+      - run: |
+          make readme
+          git diff --exit-code
+        name: Check README is up to date
 
   deploy-package:
     runs-on: ubuntu-18.04
