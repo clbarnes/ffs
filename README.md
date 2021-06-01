@@ -1,6 +1,6 @@
 # ffs
 
-Python tools for querying Flexible File Structure
+Python tools for querying a Flexible File Structure as specified in https://gitlab.com/cardonazlaticlabs/data-policy
 
 ## Usage
 
