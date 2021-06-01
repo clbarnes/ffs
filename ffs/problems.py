@@ -1,11 +1,10 @@
 import logging
 from pathlib import Path
-from typing import Iterator, Optional, Set, Tuple, List
+from typing import Iterator, List, Optional, Set, Tuple
 
 from .classes import Entry
-from .utils import get_child_names, get_list
 from .exceptions import EmptyReadme, NoExplicitResponsible
-
+from .utils import get_child_names, get_list
 
 logger = logging.getLogger(__name__)
 
@@ -40,14 +39,16 @@ def find_problems(
         logger.warning("Nobody responsible, falling back to directory owner")
         responsible = [root.owner()]
 
-        yield (responsible, root, NoExplicitResponsible("No explicit responsibility for dataset"))
+        yield (
+            responsible,
+            root,
+            NoExplicitResponsible("No explicit responsibility for dataset"),
+        )
 
     try:
         readme = Entry._read_readme(root)
         if not readme.strip():
-            yield (
-                responsible, root, EmptyReadme("Readme is empty")
-            )
+            yield (responsible, root, EmptyReadme("Readme is empty"))
     except Exception as e:
         yield (responsible or [], root, e)
         skip = True
