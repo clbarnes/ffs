@@ -17,7 +17,7 @@ Options:
   --help         Show this message and exit.
 
 Commands:
-  book      Create a static website describing the FFS.
+  book      Export the FFS metadata into markdown files which can be...
   export    Read the FFS and its metadata into JSON.
   problems  List problems with the structure of the FFS.
 ```
@@ -53,7 +53,8 @@ Options:
 ```_book
 Usage: ffs book [OPTIONS] [ROOT] TARGET
 
-  Create a static website describing the FFS. Requires mdbook.
+  Export the FFS metadata into markdown files which can be consumed by
+  mdbook for creating a static website.
 
 Options:
   -t, --title TEXT         Title for generated book, default
@@ -74,5 +75,9 @@ Usage: ffs problems [OPTIONS] [ROOT]
   List problems with the structure of the FFS.
 
 Options:
-  --help  Show this message and exit.
+  -c, --check          Exit with an error code at the first problem
+  -s, --skip-problems  Do not attempt to traverse below problematic
+                       directories
+
+  --help               Show this message and exit.
 ```
