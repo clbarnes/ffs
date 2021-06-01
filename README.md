@@ -2,6 +2,9 @@
 
 Python tools for querying a Flexible File Structure as specified in https://gitlab.com/cardonazlaticlabs/data-policy
 
+The name of the PyPI package is `flexfs` to avoid naming collisions with the unrelated [`ffs`](https://pypi.org/project/ffs/) project.
+The import and CLI name is `ffs`.
+
 ## Usage
 
 The entry point is a command line tool called `ffs` with a number of subcommands:

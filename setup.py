@@ -6,7 +6,7 @@ with open(Path(__file__).resolve().parent / "README.md") as f:
     readme = f.read()
 
 setup(
-    name="ffs",
+    name="flexfs",
     url="https://github.com/clbarnes/ffs",
     author="Chris L. Barnes",
     description="Python tools for querying Flexible File Structure",
