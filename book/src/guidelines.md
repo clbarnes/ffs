@@ -107,7 +107,7 @@ As far as possible, no two files in the same directory should be disambiguated s
 Where possible, use only [printable 7-bit ASCII characters](https://en.wikipedia.org/wiki/ASCII#Printable_characters).
 This maximises compatability with software tools and researchers' keyboards.
 
-Some platforms [restrict the characters you can use in file names](https://en.wikipedia.org/wiki/Filename#Reserved_characters_and_words), or assign special to characters such that they require quoting or escaping.
+Some platforms [restrict the characters you can use in file names](https://en.wikipedia.org/wiki/Filename#Reserved_characters_and_words), or assign special meaning to characters such that they require quoting or escaping.
 Try to avoid these characters (including, but not limited to, ``/\?%*^:;|`'"<>,=()[]{}&#$``) where possible, even if your platform allows them.
 
 Where ASCII characters are not sufficient, make efforts to use [UTF-8 encoding](https://en.wikipedia.org/wiki/UTF-8), as it is a strict superset of ASCII, very widely supported, and can encode all [Unicode](https://en.wikipedia.org/wiki/Unicode) characters.
@@ -128,7 +128,7 @@ Most humans, and many software tools including some operating systems, infer a f
 Where extensions exist for your file format, use them as specifically as possible.
 For example, use `.csv` rather than `.txt` for comma separated value files even though they are indeed text; `.tsv` if the separators are tabs.
 
-If there is no appropriate file extension for your specific data format, consider using `.bin` for binary data, and `.dat` for text data (can also be used for binary).
+If there is no appropriate file extension for your specific data format, consider using `.bin` for binary data, and `.dat` for generic text data not designed for human consumption (can also be used for binary).
 Document the format of this data, either alongside the data files, or with a permalink (do not rely on institutional knowledge).
 
 ### Datetimes in file names

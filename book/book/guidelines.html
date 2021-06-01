@@ -238,7 +238,7 @@ As far as possible, no two files in the same directory should be disambiguated s
 <h3><a class="header" href="#characters" id="characters">Characters</a></h3>
 <p>Where possible, use only <a href="https://en.wikipedia.org/wiki/ASCII#Printable_characters">printable 7-bit ASCII characters</a>.
 This maximises compatability with software tools and researchers' keyboards.</p>
-<p>Some platforms <a href="https://en.wikipedia.org/wiki/Filename#Reserved_characters_and_words">restrict the characters you can use in file names</a>, or assign special to characters such that they require quoting or escaping.
+<p>Some platforms <a href="https://en.wikipedia.org/wiki/Filename#Reserved_characters_and_words">restrict the characters you can use in file names</a>, or assign special meaning to characters such that they require quoting or escaping.
 Try to avoid these characters (including, but not limited to, <code>/\?%*^:;|`'&quot;&lt;&gt;,=()[]{}&amp;#$</code>) where possible, even if your platform allows them.</p>
 <p>Where ASCII characters are not sufficient, make efforts to use <a href="https://en.wikipedia.org/wiki/UTF-8">UTF-8 encoding</a>, as it is a strict superset of ASCII, very widely supported, and can encode all <a href="https://en.wikipedia.org/wiki/Unicode">Unicode</a> characters.</p>
 <h3><a class="header" href="#case-conventions" id="case-conventions">Case conventions</a></h3>
@@ -254,7 +254,7 @@ Try to avoid these characters (including, but not limited to, <code>/\?%*^:;|`'&
 <p>Most humans, and many software tools including some operating systems, infer a file's format from its extension: a few characters after the final period in a file name.
 Where extensions exist for your file format, use them as specifically as possible.
 For example, use <code>.csv</code> rather than <code>.txt</code> for comma separated value files even though they are indeed text; <code>.tsv</code> if the separators are tabs.</p>
-<p>If there is no appropriate file extension for your specific data format, consider using <code>.bin</code> for binary data, and <code>.dat</code> for text data (can also be used for binary).
+<p>If there is no appropriate file extension for your specific data format, consider using <code>.bin</code> for binary data, and <code>.dat</code> for generic text data not designed for human consumption (can also be used for binary).
 Document the format of this data, either alongside the data files, or with a permalink (do not rely on institutional knowledge).</p>
 <h3><a class="header" href="#datetimes-in-file-names" id="datetimes-in-file-names">Datetimes in file names</a></h3>
 <p>Windows does not support <code>:</code> in file names, and many systems assign importance to period characters, so ISO-8601 datetimes are often not be appropriate.
