@@ -17,7 +17,7 @@ Options:
   --help         Show this message and exit.
 
 Commands:
-  book      Export the FFS metadata into markdown files which can be...
+  book      Export the FFS metadata into files for mdbook.
   export    Read the FFS and its metadata into JSON.
   problems  List problems with the structure of the FFS.
 ```
@@ -53,8 +53,7 @@ Options:
 ```_book
 Usage: ffs book [OPTIONS] [ROOT] TARGET
 
-  Export the FFS metadata into markdown files which can be consumed by
-  mdbook for creating a static website.
+  Export the FFS metadata into files for mdbook.
 
 Options:
   -t, --title TEXT         Title for generated book, default
@@ -80,4 +79,10 @@ Options:
                        directories
 
   --help               Show this message and exit.
+```
+nd exit.
+```
+lp               Show this message and exit.
+```
+nd exit.
 ```

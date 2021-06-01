@@ -108,8 +108,7 @@ def flatten_jso(jso: EntryJso):
 )
 @add_common_args
 def book(root, target, recursion, title=None):
-    """Export the FFS metadata into markdown files
-    which can be consumed by mdbook for creating a static website."""
+    """Export the FFS metadata into files for mdbook."""
     name = f"{socket.getfqdn()}:{os.path.abspath(root)}"
     from .book import make_mdbook
 

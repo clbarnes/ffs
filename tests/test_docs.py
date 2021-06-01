@@ -1,7 +1,10 @@
 import subprocess as sp
 from pathlib import Path
 
+from click.testing import CliRunner
 import pytest
+
+from ffs.cli import main
 
 PROJECT_DIR = Path(__file__).parent.parent
 SRC_DIR: Path = PROJECT_DIR / "data-policy"
@@ -16,6 +19,10 @@ def test_correct_documents(fname: str):
     assert src.read_text() == tgt.read_text()
 
 
+def normalise_whitespace(s: str):
+    return " ".join(s.split())
+
+
 @pytest.mark.parametrize(
     ["cmd"],
     [
@@ -26,10 +33,15 @@ def test_correct_documents(fname: str):
     ],
 )
 def test_correct_help(cmd):
-    readme_txt = (PROJECT_DIR / "README.md").read_text()
-    args = ["ffs"]
+    readme_txt = normalise_whitespace((PROJECT_DIR / "README.md").read_text())
+    args = ["--help"]
     if cmd:
-        args.append(cmd)
-    args.append("--help")
-    result = sp.run(args, capture_output=True, check=True, text=True)
-    assert result.stdout in readme_txt
+        args.insert(0, cmd)
+    runner = CliRunner()
+    result = runner.invoke(main, args)
+    assert result.exit_code == 0
+    msg = normalise_whitespace(result.output)
+    replaced = msg.replace("Usage: main ", "Usage: ffs ")
+    with open(f"tmp/out_{cmd}.txt", "w") as f:
+        f.write(replaced)
+    assert replaced in readme_txt
