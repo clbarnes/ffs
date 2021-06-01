@@ -13,7 +13,7 @@ Usage: ffs [OPTIONS] COMMAND [ARGS]...
 
 Options:
   --version      Show the version and exit.
-  -v, --verbose  Increase logging verbosity.
+  -v, --verbose  Increase logging verbosity.  [x>=0]
   --help         Show this message and exit.
 
 Commands:
@@ -34,17 +34,14 @@ Options:
   -s, --indent INTEGER     Indentation of output: none by default, 0 for
                            newlines, a positive number N for N spaces, a
                            negative number -N for N tabs.
-
   -l, --flatlines          Un-nest the entries and print one object per line.
                            The 'children' attribute is replaced by an array of
                            string names, and the 'name' attribute now includes
                            the entry's ancestors (/-separated). '--indent'
                            option is ignored.
-
   -r, --recursion INTEGER  Depth to recurse into entries; negative (default)
                            for infinite. Directories which are not valid
                            entries are not explored.
-
   --help                   Show this message and exit.
 ```
 
@@ -58,11 +55,9 @@ Usage: ffs book [OPTIONS] [ROOT] TARGET
 Options:
   -t, --title TEXT         Title for generated book, default
                            '{FQDN}:{ROOT_REAL_PATH}'.
-
   -r, --recursion INTEGER  Depth to recurse into entries; negative (default)
                            for infinite. Directories which are not valid
                            entries are not explored.
-
   --help                   Show this message and exit.
 ```
 
@@ -77,12 +72,5 @@ Options:
   -c, --check          Exit with an error code at the first problem
   -s, --skip-problems  Do not attempt to traverse below problematic
                        directories
-
   --help               Show this message and exit.
-```
-nd exit.
-```
-lp               Show this message and exit.
-```
-nd exit.
 ```
