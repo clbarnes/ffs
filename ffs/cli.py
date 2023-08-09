@@ -1,12 +1,15 @@
+import datetime as dt
 import json
 import logging
 import os
 import socket
 import sys
+from email.utils import parseaddr
 from pathlib import Path
 from typing import List, Optional, Tuple
 
 import click
+import strictyaml as syml
 
 from . import __version__
 from .classes import Entry, EntryJso
@@ -40,6 +43,57 @@ def main(verbose):
         2: logging.DEBUG,
     }.get(verbose, logging.DEBUG)
     logging.basicConfig(level=level)
+
+
+def date_prefix(date: dt.date, res: str):
+    r = res.lower()
+    if r.startswith("y"):
+        end = 4
+    elif r.startswith("m"):
+        end = 7
+    elif r.startswith("d"):
+        end = 10
+    else:
+        raise ValueError(f"Could not parse date resolution: '{res}'")
+
+    return date.isoformat()[:end] + "_"
+
+
+@main.command()
+@click.argument("name", type=str)
+@click.argument("directory", type=Path, default=Path.cwd())
+@click.option("--description", "-d", prompt=True)
+@click.option("--responsible", "-r", type=parseaddr, prompt=True, multiple=True)
+@click.option(
+    "--date-resolution",
+    "-D",
+    type=click.Choice(["year", "y", "month", "m", "day", "d"], case_sensitive=False),
+)
+@click.option("--today", "-t", type=dt.date.fromisoformat, default=dt.date.today())
+@click.option("--leaf", "-l", is_flag=True)
+def create(name, directory, description, responsible, date_resolution, today, is_leaf):
+    """Create a new FFS entry."""
+    directory = directory.resolve()
+    full_name = date_prefix(today, date_resolution) + name
+
+    entry = directory / full_name
+
+    if (entry / Entry.readme_name).is_file() or (entry / Entry.metadata_name).is_file():
+        logger.warning("Directory already exists and has README.md or METADATA.yaml")
+        return
+
+    meta = {
+        "description": " ".join(description.strip().split()),
+        "responsible": [f"{r[0]} <{r[1]}>" for r in responsible],
+    }
+    if is_leaf:
+        meta["ignore"] = "*"
+
+    yaml_str = syml.as_document(meta).as_yaml()
+
+    entry.mkdir(parents=True, exist_ok=True)
+    (entry / Entry.readme_name).write_text(f"# {full_name}\n\n{description.strip()}\n")
+    (entry / Entry.metadata_name).write_text(yaml_str)
 
 
 @main.command()
@@ -137,6 +191,7 @@ def problems(root, check, skip_problems):
     2- path of problem entry, relative to given root;
     3- description of the problem
     """
+    # todo: check for non-unique entry names
     root = root.resolve()
     for owner, path, err in find_problems(root, skip_problems):
         print(f"{','.join(owner)}\t{path.relative_to(root)}\t{err}")

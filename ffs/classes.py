@@ -11,6 +11,11 @@ except ImportError:
     from typing_extensions import TypedDict
 
 import networkx as nx
+if int(nx.__version__.split(".")[0]) < 3:
+    from networkx import OrderedDiGraph as DiGraph
+else:
+    from networkx import DiGraph
+
 import strictyaml as syml
 
 from .utils import get_child_names, get_list
@@ -142,7 +147,7 @@ class Entry:
 
     def _to_digraph(self, existing: Optional[Tuple[nx.DiGraph, str]]):
         if existing is None:
-            g = nx.OrderedDiGraph()
+            g = DiGraph()
             name = self.name or "/"
             g.add_node(name, entry=self)
             root = name
