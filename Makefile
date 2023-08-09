@@ -27,6 +27,7 @@ install-dev:
 readme:
 	ffs --help | p2c --tgt _main README.md \
 	&& ffs export --help | p2c --tgt _export README.md \
+	&& ffs create --help | p2c --tgt _create README.md \
 	&& ffs book --help | p2c --tgt _book README.md \
 	&& ffs problems --help | p2c --tgt _problems README.md
 

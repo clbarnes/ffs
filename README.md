@@ -1,6 +1,6 @@
 # ffs
 
-Python tools for querying a Flexible File Structure as specified in https://gitlab.com/cardonazlaticlabs/data-policy
+Python tools for querying a Flexible File Structure as specified in <https://gitlab.com/cardonazlaticlabs/data-policy>
 
 The name of the PyPI package is `flexfs` to avoid naming collisions with the unrelated [`ffs`](https://pypi.org/project/ffs/) project.
 The import and CLI name is `ffs`.
@@ -16,13 +16,38 @@ Usage: ffs [OPTIONS] COMMAND [ARGS]...
 
 Options:
   --version      Show the version and exit.
-  -v, --verbose  Increase logging verbosity.  [x>=0]
+  -v, --verbose  Increase logging verbosity.
   --help         Show this message and exit.
 
 Commands:
   book      Export the FFS metadata into files for mdbook.
+  create    Create a new FFS entry.
   export    Read the FFS and its metadata into JSON.
   problems  List problems with the structure of the FFS.
+```
+
+### Create
+
+```_create
+Usage: ffs create [OPTIONS] NAME [DIRECTORY]
+
+  Create a new FFS entry.
+
+Options:
+  -d, --description TEXT          Description of the entry (interactive if not
+                                  given)
+  -r, --responsible PARSEADDR     Email address of person responsible for this
+                                  entry. Several may be given; interactive if
+                                  none given.
+  -D, --date-resolution [year|y|month|m|day|d]
+                                  Smallest unit to show in date prefix of
+                                  entry name (default month).
+  -t, --today FROMISOFORMAT       ISO-8601 date (YYYY-MM-DD) to assign to
+                                  entry (default today)
+  -l, --leaf                      Ignore all subdirectories
+  -R, --root                      Do not check that parent is an entry which
+                                  does not ignore the new entry.
+  --help                          Show this message and exit.
 ```
 
 ### Export

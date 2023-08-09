@@ -32,7 +32,7 @@ DEFAULT_CONFIG = """
 [book]
 authors = []
 language = "en"
-title = "Standardised File Structure"
+title = "Flexible File Structure"
 multilingual = false
 src = "src"
 

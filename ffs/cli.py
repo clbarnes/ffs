@@ -14,6 +14,7 @@ import strictyaml as syml
 from . import __version__
 from .classes import Entry, EntryJso
 from .problems import find_problems
+from .utils import fnmatch_any, get_list
 
 logger = logging.getLogger(__name__)
 
@@ -61,20 +62,60 @@ def date_prefix(date: dt.date, res: str):
 
 @main.command()
 @click.argument("name", type=str)
-@click.argument("directory", type=Path, default=Path.cwd())
-@click.option("--description", "-d", prompt=True)
-@click.option("--responsible", "-r", type=parseaddr, prompt=True, multiple=True)
+@click.argument(
+    "directory",
+    type=Path,
+    default=Path.cwd(),
+)
+@click.option(
+    "--description",
+    "-d",
+    prompt=True,
+    help="Description of the entry (interactive if not given)",
+)
+@click.option(
+    "--responsible",
+    "-r",
+    type=parseaddr,
+    prompt=True,
+    multiple=True,
+    help=(
+        "Email address of person responsible for this entry. "
+        "Several may be given; interactive if none given."
+    ),
+)
 @click.option(
     "--date-resolution",
     "-D",
     type=click.Choice(["year", "y", "month", "m", "day", "d"], case_sensitive=False),
+    default="month",
+    help="Smallest unit to show in date prefix of entry name (default month).",
 )
-@click.option("--today", "-t", type=dt.date.fromisoformat, default=dt.date.today())
-@click.option("--leaf", "-l", is_flag=True)
-def create(name, directory, description, responsible, date_resolution, today, is_leaf):
+@click.option(
+    "--today",
+    "-t",
+    type=dt.date.fromisoformat,
+    default=dt.date.today(),
+    help="ISO-8601 date (YYYY-MM-DD) to assign to entry (default today)",
+)
+@click.option("--leaf", "-l", is_flag=True, help="Ignore all subdirectories")
+@click.option(
+    "--root",
+    "-R",
+    is_flag=True,
+    help="Do not check that parent is an entry which does not ignore the new entry.",
+)
+def create(
+    name, directory, description, responsible, date_resolution, today, is_leaf, is_root
+):
     """Create a new FFS entry."""
     directory = directory.resolve()
     full_name = date_prefix(today, date_resolution) + name
+
+    if not is_root:
+        parent = Entry.from_dir(directory, 0)
+        if fnmatch_any(full_name, get_list(parent.metadata)):
+            logger.warning("Entry '%s' is ignored by parent")
 
     entry = directory / full_name
 
